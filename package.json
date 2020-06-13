@@ -28,6 +28,7 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "gsap": "^2.1.2",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "swiper": "^5.4.2"
   }
 }
