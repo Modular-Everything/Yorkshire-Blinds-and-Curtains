@@ -1,5 +1,9 @@
 import React from 'react';
 
+import Logo from '../../../../static/images/logo.png';
+import LogoTwo from '../../../../static/images/logo-two.png';
+import IconBar from '../../../../static/images/icons/icon-bar.png';
+
 // =====================
 // Header
 // =====================
@@ -13,14 +17,14 @@ const Header = () => {
             <div className="logo-box">
               <div className="logo">
                 <a href="index.html">
-                  <img src="assets/images/logo.png" alt="" />
+                  <img src={Logo} alt="" />
                 </a>
               </div>
             </div>
 
             <div className="nav-outer clearfix">
               <div className="mobile-nav-toggler">
-                <img src="assets/images/icons/icon-bar.png" alt="" />
+                <img src={IconBar} alt="" />
               </div>
 
               <nav className="main-menu navbar-expand-md navbar-light">
@@ -128,19 +132,11 @@ const Header = () => {
                   </ul>
                 </div>
               </nav>
-
-              <button type="button" className="theme-btn search-toggler">
-                <span className="flaticon-search"></span>
-              </button>
             </div>
             <div className="navbar-right-info">
               <div className="phone-number">
                 <i className="fas fa-phone"></i>
                 <a href="tel:+1 (234)5018607">+1 (234) 501 8607</a>
-              </div>
-
-              <div className="sidemenu-nav-toggler">
-                <img src="assets/images/icons/icon-bar.png" alt="" />
               </div>
             </div>
           </div>
@@ -151,7 +147,7 @@ const Header = () => {
         <div className="auto-container clearfix">
           <div className="logo float-left">
             <a href="index.html" title="">
-              <img src="assets/images/logo-two.png" alt="" title="" />
+              <img src={LogoTwo} alt="" title="" />
             </a>
           </div>
 
@@ -170,7 +166,7 @@ const Header = () => {
         <nav className="menu-box">
           <div className="nav-logo">
             <a href="index.html">
-              <img src="assets/images/logo.png" alt="" title="" />
+              <img src={Logo} alt="" title="" />
             </a>
           </div>
           <div className="menu-outer">
