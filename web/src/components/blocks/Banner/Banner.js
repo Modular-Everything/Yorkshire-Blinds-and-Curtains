@@ -46,10 +46,7 @@ const Banner = () => {
                   </div>
                   <div className="link-box">
                     <a href="#" className="theme-btn btn-style-one light">
-                      <span>WHO WE ARE</span>
-                    </a>
-                    <a href="#" className="theme-btn btn-style-two light">
-                      <span>WORKS WE DID</span>
+                      <span>WHO WE ARE IS WHAT WE DO</span>
                     </a>
                   </div>
                 </div>
@@ -68,10 +65,7 @@ const Banner = () => {
                   </div>
                   <div className="link-box">
                     <a href="#" className="theme-btn btn-style-one light">
-                      <span>WHO WE ARE</span>
-                    </a>
-                    <a href="#" className="theme-btn btn-style-two light">
-                      <span>WORKS WE DID</span>
+                      <span>WHO WE ARE IS WHAT WE DO</span>
                     </a>
                   </div>
                 </div>
@@ -90,10 +84,7 @@ const Banner = () => {
                   </div>
                   <div className="link-box">
                     <a href="#" className="theme-btn btn-style-one light">
-                      <span>WHO WE ARE</span>
-                    </a>
-                    <a href="#" className="theme-btn btn-style-two light">
-                      <span>WORKS WE DID</span>
+                      <span>WHO WE ARE IS WHAT WE DO</span>
                     </a>
                   </div>
                 </div>
