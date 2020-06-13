@@ -24,18 +24,18 @@ const Preloader = () => {
   });
 
   return (
-    <div class="loader-wrap">
-      <div class="preloader">
-        <div class="preloader-close">Preloader Close</div>
+    <div className="loader-wrap">
+      <div className="preloader">
+        <div className="preloader-close">Preloader Close</div>
       </div>
-      <div class="layer layer-one">
-        <span class="overlay"></span>
+      <div className="layer layer-one">
+        <span className="overlay"></span>
       </div>
-      <div class="layer layer-two">
-        <span class="overlay"></span>
+      <div className="layer layer-two">
+        <span className="overlay"></span>
       </div>
-      <div class="layer layer-three">
-        <span class="overlay"></span>
+      <div className="layer layer-three">
+        <span className="overlay"></span>
       </div>
     </div>
   );
