@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Header from '../Header';
 import Preloader from '../../blocks/Preloader';
 
 // =====================
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
   return (
     <div class="page-wrapper">
       <Preloader />
+      <Header />
 
       <main>{children}</main>
 
