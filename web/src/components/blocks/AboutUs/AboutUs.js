@@ -17,7 +17,6 @@ const AboutUs = () => {
     <section className="about-us-section">
       <div className="shape-one"></div>
       <div className="auto-container">
-        <h1 className="big-title">About Us</h1>
         <div className="row">
           <div className="col-lg-6">
             <div className="content wow fadeInUp">
