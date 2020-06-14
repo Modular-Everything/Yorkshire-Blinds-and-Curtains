@@ -2729,7 +2729,7 @@ img {
 
 .about-us-section {
   position: relative;
-  padding: 120px 0 190px;
+  padding: 120px 0;
 }
 
 .big-title {
@@ -2739,7 +2739,7 @@ img {
   width: 100%;
   font-size: 250px;
   font-weight: 800;
-  color: #f7f7f7;
+  color: #eee;
   text-transform: uppercase;
   line-height: 220px;
   -webkit-animation: linear infinite alternate;
@@ -2819,7 +2819,6 @@ img {
   margin-top: -120px;
   margin-left: -60px;
   display: inline-block;
-  margin-bottom: 30px;
 }
 
 /* Funfacts Section */
@@ -2907,8 +2906,8 @@ img {
   top: 0;
   bottom: 0;
   background-image: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-  background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   background-image: -ms-linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   opacity: 0.8;
 }
 
