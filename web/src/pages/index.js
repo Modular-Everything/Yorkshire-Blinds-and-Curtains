@@ -5,6 +5,7 @@ import Banner from '../components/blocks/Banner';
 import AboutUs from '../components/blocks/AboutUs';
 import ProjectsIndex from '../components/blocks/ProjectsIndex';
 import LogoMatrix from '../components/blocks/LogoMatrix';
+import Services from '../components/blocks/Services';
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <AboutUs />
     <ProjectsIndex />
     <LogoMatrix />
+    <Services />
   </Layout>
 );
 
