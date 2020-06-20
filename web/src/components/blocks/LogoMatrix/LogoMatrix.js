@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import Flickity from 'flickity';
+import React from 'react';
 
 import PlaceholderImg from '../../../../static/images/resource/client-logo-1.jpg';
 import PlaceholderImgAlt from '../../../../static/images/resource/client-logo-2.jpg';
@@ -9,33 +8,34 @@ import PlaceholderImgAlt from '../../../../static/images/resource/client-logo-2.
 // =====================
 
 const LogoMatrix = () => {
-  useEffect(() => {
-    new Flickity('.theme_carousel', {
-      accessibility: true,
-      groupCells: true,
-      wrapAround: true,
-      draggable: '>1',
-    });
-  });
-
   return (
     <section className="clients-logo-section">
       <div className="auto-container">
-        <div className="theme_carousel">
-          <div className="image">
-            <img src={PlaceholderImg} alt="" />
+        <div className="logo_matrix">
+          <div className="slide-item">
+            <div className="image">
+              <img src={PlaceholderImg} alt="" />
+            </div>
           </div>
-          <div className="image">
-            <img src={PlaceholderImgAlt} alt="" />
+          <div className="slide-item">
+            <div className="image">
+              <img src={PlaceholderImgAlt} alt="" />
+            </div>
           </div>
-          <div className="image">
-            <img src={PlaceholderImg} alt="" />
+          <div className="slide-item">
+            <div className="image">
+              <img src={PlaceholderImg} alt="" />
+            </div>
           </div>
-          <div className="image">
-            <img src={PlaceholderImgAlt} alt="" />
+          <div className="slide-item">
+            <div className="image">
+              <img src={PlaceholderImgAlt} alt="" />
+            </div>
           </div>
-          <div className="image">
-            <img src={PlaceholderImg} alt="" />
+          <div className="slide-item">
+            <div className="image">
+              <img src={PlaceholderImg} alt="" />
+            </div>
           </div>
         </div>
       </div>

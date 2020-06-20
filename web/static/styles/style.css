@@ -6346,6 +6346,17 @@ img {
   margin: 0 auto;
 }
 
+.logo_matrix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_matrix .slide-item {
+  margin: 0 15px;
+}
+
 .project-block-two .content {
   position: absolute;
   top: 0;
