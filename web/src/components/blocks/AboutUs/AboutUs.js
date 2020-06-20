@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { WowReveal } from '../../../utils/wow';
 
-import Logo from '../../../../static/images/logo.png';
 import PlaceholderImg from '../../../../static/images/resource/image-1.png';
 
 // =====================
@@ -43,9 +42,6 @@ const AboutUs = () => {
             <div className="image-block wow fadeInRight">
               <div className="image">
                 <img src={PlaceholderImg} alt="" />
-              </div>
-              <div className="logo">
-                <img src={Logo} alt="" />
               </div>
             </div>
           </div>
