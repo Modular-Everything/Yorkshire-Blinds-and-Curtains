@@ -1,5 +1,5 @@
 import React from 'react';
-import PlaceholderImg from '../../../../static/images/background/bg-20.jpg';
+import BgImg from '../../../../static/images/background/bg-20.jpg';
 
 // =====================
 // Hero
@@ -9,7 +9,7 @@ const Hero = (props) => {
   const { title, subtitle } = props;
 
   return (
-    <section className="page-title" style={{ backgroundImage: `url(${PlaceholderImg})` }}>
+    <section className="page-title" style={{ backgroundImage: `url(${BgImg})` }}>
       <div className="auto-container">
         <div className="content-box">
           <div className="content-wrapper">
