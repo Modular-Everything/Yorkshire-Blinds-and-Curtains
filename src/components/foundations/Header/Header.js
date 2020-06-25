@@ -16,28 +16,31 @@ const Header = () => {
       const windowpos = $(window).scrollTop();
       const siteHeader = $('.main-header');
       const scrollLink = $('.scroll-to-top');
-      const sticky_header = $('.main-header .sticky-header');
+      const stickyHeader = $('.main-header .sticky-header');
       if (windowpos > 100) {
         siteHeader.addClass('fixed-header');
-        sticky_header.addClass('animated slideInDown');
+        stickyHeader.addClass('animated slideInDown');
         scrollLink.fadeIn(300);
       } else {
         siteHeader.removeClass('fixed-header');
-        sticky_header.removeClass('animated slideInDown');
+        stickyHeader.removeClass('animated slideInDown');
         scrollLink.fadeOut(300);
       }
     }
 
     headerStyle();
 
-    $(window).on('scroll', function () {
+    $(window).on('scroll', function scrollHeader() {
       headerStyle();
     });
   }, []);
 
   const navContent = (
     <nav className="main-menu navbar-expand-md navbar-light">
-      <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+      <div
+        className="collapse navbar-collapse show clearfix"
+        id="navbarSupportedContent"
+      >
         <ul className="navigation clearfix">
           <li className="dropdown">
             <a href="index.html">Home</a>
@@ -66,7 +69,7 @@ const Header = () => {
             <a href="about.html">About Us</a>
           </li>
           <li className="dropdown">
-            <a href="#">Services</a>
+            <a href="/">Services</a>
             <ul>
               <li>
                 <a href="services.html">Services</a>
@@ -86,7 +89,7 @@ const Header = () => {
             </ul>
           </li>
           <li className="dropdown">
-            <a href="#">Pages</a>
+            <a href="/">Pages</a>
             <ul>
               <li>
                 <a href="history.html">History</a>
@@ -103,7 +106,7 @@ const Header = () => {
             </ul>
           </li>
           <li className="dropdown">
-            <a href="#">Portfolio</a>
+            <a href="/">Portfolio</a>
             <ul>
               <li>
                 <a href="portfolio-1.html">Portfolio Style 01</a>
@@ -114,7 +117,7 @@ const Header = () => {
             </ul>
           </li>
           <li className="dropdown">
-            <a href="#">Blog</a>
+            <a href="/">Blog</a>
             <ul>
               <li>
                 <a href="blog.html">Blog Grid</a>
@@ -128,7 +131,7 @@ const Header = () => {
             </ul>
           </li>
           <li className="dropdown">
-            <a href="#">Contact</a>
+            <a href="/">Contact</a>
             <ul>
               <li>
                 <a href="contact-1.html">Contact 01</a>
@@ -186,7 +189,7 @@ const Header = () => {
       </div>
 
       <div className="mobile-menu">
-        <div className="menu-backdrop"></div>
+        <div className="menu-backdrop" />
         <div className="close-btn">
           <span className="icon flaticon-remove"></span>
         </div>
@@ -201,27 +204,27 @@ const Header = () => {
             <div className="social-links">
               <ul className="clearfix">
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <span className="fab fa-twitter"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <span className="fab fa-facebook-square"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <span className="fab fa-pinterest-p"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <span className="fab fa-instagram"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <span className="fab fa-youtube"></span>
                   </a>
                 </li>
@@ -232,8 +235,8 @@ const Header = () => {
       </div>
 
       <div className="nav-overlay">
-        <div className="cursor"></div>
-        <div className="cursor-follower"></div>
+        <div className="cursor" />
+        <div className="cursor-follower" />
       </div>
     </header>
   );
@@ -243,8 +246,8 @@ export default Header;
 
 // ====
 
-export const DATA = useStaticQuery(graphql`
-  query MyQuery {
-    __typename ## Placeholder value
-  }
-`);
+// export const DATA = useStaticQuery(graphql`
+//   query MyQuery {
+//     __typename ## Placeholder value
+//   }
+// `);

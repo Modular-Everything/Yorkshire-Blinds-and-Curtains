@@ -14,7 +14,7 @@ const AboutUs = () => {
 
   return (
     <section className="about-us-section">
-      <div className="shape-one"></div>
+      <div className="shape-one" />
       <div className="auto-container">
         <div className="row">
           <div className="col-lg-6">
@@ -23,16 +23,18 @@ const AboutUs = () => {
                 The Most Talented Interior <br /> Designers &amp; Architects
               </h2>
               <h4>
-                Sit eit malis civibus kase iuvaret blandit ipsum volumus indis <br /> referrentur euno utamur vivendo
-                interpretaris.
+                Sit eit malis civibus kase iuvaret blandit ipsum volumus indis{' '}
+                <br /> referrentur euno utamur vivendo interpretaris.
               </h4>
               <div className="text">
-                Beyond more stoic this along goodness this sed wow manatee mongos flusterd impressive man farcrud opened
-                inside owin punitively around after wasteful telling spransac coldly spokeles client. Squid hesitantly
-                gibbered some tyran nically talkative.
+                Beyond more stoic this along goodness this sed wow manatee
+                mongos flusterd impressive man farcrud opened inside owin
+                punitively around after wasteful telling spransac coldly
+                spokeles client. Squid hesitantly gibbered some tyran nically
+                talkative.
               </div>
               <div className="link-btn">
-                <a href="#" className="theme-btn btn-style-two">
+                <a href="/" className="theme-btn btn-style-two">
                   <span>Read More</span>
                 </a>
               </div>

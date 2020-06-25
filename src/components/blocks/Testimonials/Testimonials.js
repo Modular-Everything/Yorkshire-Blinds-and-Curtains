@@ -34,7 +34,7 @@ const Testimonials = () => {
 
   return (
     <section className="testimonial-section">
-      <div className="sec-bg" style={{ backgroundImage: `url(${BgImg})` }}></div>
+      <div className="sec-bg" style={{ backgroundImage: `url(${BgImg})` }} />
       <div className="auto-container">
         <div className="testimonial-carousel">
           <div className="swiper-container testimonial-thumbs">
@@ -65,9 +65,11 @@ const Testimonials = () => {
                       <span className="flaticon-quote"></span>
                     </div>
                     <div className="text">
-                      Habeo facete putent maluisset intellegam vixte vim prompta facilisiys interesset denique pro
-                      torquatos adipiscing pro, pro no odio modus. Mea malis summo ipsum dolore assueverit nec facer
-                      imperdiet postea laoreet vulputate has beyond more stoic.
+                      Habeo facete putent maluisset intellegam vixte vim prompta
+                      facilisiys interesset denique pro torquatos adipiscing
+                      pro, pro no odio modus. Mea malis summo ipsum dolore
+                      assueverit nec facer imperdiet postea laoreet vulputate
+                      has beyond more stoic.
                     </div>
                     <div className="author-title">
                       thomas henry <span>thomas henry</span>
@@ -82,9 +84,11 @@ const Testimonials = () => {
                       <span className="flaticon-quote"></span>
                     </div>
                     <div className="text">
-                      Habeo facete putent maluisset intellegam vixte vim prompta facilisiys interesset denique pro
-                      torquatos adipiscing pro, pro no odio modus. Mea malis summo ipsum dolore assueverit nec facer
-                      imperdiet postea laoreet vulputate has beyond more stoic.
+                      Habeo facete putent maluisset intellegam vixte vim prompta
+                      facilisiys interesset denique pro torquatos adipiscing
+                      pro, pro no odio modus. Mea malis summo ipsum dolore
+                      assueverit nec facer imperdiet postea laoreet vulputate
+                      has beyond more stoic.
                     </div>
                     <div className="author-title">
                       thomas henry <span>thomas henry</span>
@@ -99,9 +103,11 @@ const Testimonials = () => {
                       <span className="flaticon-quote"></span>
                     </div>
                     <div className="text">
-                      Habeo facete putent maluisset intellegam vixte vim prompta facilisiys interesset denique pro
-                      torquatos adipiscing pro, pro no odio modus. Mea malis summo ipsum dolore assueverit nec facer
-                      imperdiet postea laoreet vulputate has beyond more stoic.
+                      Habeo facete putent maluisset intellegam vixte vim prompta
+                      facilisiys interesset denique pro torquatos adipiscing
+                      pro, pro no odio modus. Mea malis summo ipsum dolore
+                      assueverit nec facer imperdiet postea laoreet vulputate
+                      has beyond more stoic.
                     </div>
                     <div className="author-title">
                       thomas henry <span>thomas henry</span>

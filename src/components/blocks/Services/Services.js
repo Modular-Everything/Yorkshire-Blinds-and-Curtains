@@ -14,16 +14,18 @@ const Services = () => {
 
   return (
     <section className="services-section">
-      <div className="border-shape"></div>
+      <div className="border-shape" />
       <h1 className="big-title">What we do</h1>
       <div className="auto-container">
         <div className="sec-title text-center">
-          <div className="shape-one"></div>
+          <div className="shape-one" />
           <span className="sec-title-dec"></span>
           <h2>Luxurious &amp; Innovative Services</h2>
           <div className="text">
-            Flusterd impressive man farcrud open inside owin punitively around after wasteful telling spran <br />
-            coldly spokeles client. Squid hesitantly gibbered some tyran nically talkative crud.
+            Flusterd impressive man farcrud open inside owin punitively around
+            after wasteful telling spran <br />
+            coldly spokeles client. Squid hesitantly gibbered some tyran nically
+            talkative crud.
           </div>
         </div>
         <div className="row">
@@ -35,7 +37,7 @@ const Services = () => {
               <div className="content">
                 <h4>Home Decoration</h4>
                 <div className="link-btn">
-                  <a href="#" className="read-more-btn">
+                  <a href="/" className="read-more-btn">
                     Read More
                   </a>
                 </div>
@@ -50,7 +52,7 @@ const Services = () => {
               <div className="content">
                 <h4>Renovation Ideas</h4>
                 <div className="link-btn">
-                  <a href="#" className="read-more-btn">
+                  <a href="/" className="read-more-btn">
                     Read More
                   </a>
                 </div>
@@ -65,7 +67,7 @@ const Services = () => {
               <div className="content">
                 <h4>Lighting Styles</h4>
                 <div className="link-btn">
-                  <a href="#" className="read-more-btn">
+                  <a href="/" className="read-more-btn">
                     Read More
                   </a>
                 </div>
@@ -80,7 +82,7 @@ const Services = () => {
               <div className="content">
                 <h4>Architect Design</h4>
                 <div className="link-btn">
-                  <a href="#" className="read-more-btn">
+                  <a href="/" className="read-more-btn">
                     Read More
                   </a>
                 </div>
@@ -95,7 +97,7 @@ const Services = () => {
               <div className="content">
                 <h4>Exterior Design</h4>
                 <div className="link-btn">
-                  <a href="#" className="read-more-btn">
+                  <a href="/" className="read-more-btn">
                     Read More
                   </a>
                 </div>
@@ -110,7 +112,7 @@ const Services = () => {
               <div className="content">
                 <h4>Interior Planning</h4>
                 <div className="link-btn">
-                  <a href="#" className="read-more-btn">
+                  <a href="/" className="read-more-btn">
                     Read More
                   </a>
                 </div>

@@ -17,8 +17,11 @@ const ProjectsIndex = () => {
       <div className="auto-container">
         <div className="wrapper-box">
           <div className="row">
-            <a href="#" className="project-block-one col-lg-6">
-              <div className="inner-box wow fadeInUp" data-wow-duration="1500ms">
+            <a href="/" className="project-block-one col-lg-6">
+              <div
+                className="inner-box wow fadeInUp"
+                data-wow-duration="1500ms"
+              >
                 <div className="image">
                   <img src={PlaceholderImg} alt="" />
                 </div>
@@ -28,13 +31,17 @@ const ProjectsIndex = () => {
                     <h3>Residential Works</h3>
                   </div>
                   <div className="text">
-                    Beyond more stoic this along goodness this <br /> manatee flusterd impressive farcrud
+                    Beyond more stoic this along goodness this <br /> manatee
+                    flusterd impressive farcrud
                   </div>
                 </div>
               </div>
             </a>
-            <a href="#" className="project-block-one col-lg-6">
-              <div className="inner-box wow fadeInUp" data-wow-duration="1500ms">
+            <a href="/" className="project-block-one col-lg-6">
+              <div
+                className="inner-box wow fadeInUp"
+                data-wow-duration="1500ms"
+              >
                 <div className="image">
                   <img src={PlaceholderImg} alt="" />
                 </div>
@@ -44,7 +51,8 @@ const ProjectsIndex = () => {
                     <h3>Commercial Works</h3>
                   </div>
                   <div className="text">
-                    Beyond more stoic this along goodness this <br /> manatee flusterd impressive farcrud
+                    Beyond more stoic this along goodness this <br /> manatee
+                    flusterd impressive farcrud
                   </div>
                 </div>
               </div>

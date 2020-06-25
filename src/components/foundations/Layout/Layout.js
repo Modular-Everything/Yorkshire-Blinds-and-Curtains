@@ -11,7 +11,7 @@ import Preloader from '../../blocks/Preloader';
 
 const Layout = ({ children }) => {
   return (
-    <div class="page-wrapper">
+    <div className="page-wrapper">
       <Preloader />
       <Header />
 
@@ -19,8 +19,8 @@ const Layout = ({ children }) => {
 
       <Footer />
 
-      <div class="scroll-to-top scroll-to-target" data-target="html">
-        <span class="flaticon-right-arrow"></span>
+      <div className="scroll-to-top scroll-to-target" data-target="html">
+        <span className="flaticon-right-arrow" />
       </div>
     </div>
   );

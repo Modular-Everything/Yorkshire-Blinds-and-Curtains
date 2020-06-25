@@ -35,17 +35,21 @@ const Banner = () => {
     <section className="banner-section">
       <div className="swiper-container banner-slider">
         <div className="swiper-wrapper">
-          <div className="swiper-slide" style={{ backgroundImage: `url(${BgImg})` }}>
+          <div
+            className="swiper-slide"
+            style={{ backgroundImage: `url(${BgImg})` }}
+          >
             <div className="content-outer">
               <div className="content-box">
                 <div className="inner">
                   <h1>Natural Materials Earthy Palettes</h1>
                   <div className="text">
-                    Luxury Interior Designing lorem ipsum dolor sit amet consectetur adipisicing <br /> elit sed eiusmod
-                    tempor incididunt labore dolore magna aliqua.
+                    Luxury Interior Designing lorem ipsum dolor sit amet
+                    consectetur adipisicing <br /> elit sed eiusmod tempor
+                    incididunt labore dolore magna aliqua.
                   </div>
                   <div className="link-box">
-                    <a href="#" className="theme-btn btn-style-one light">
+                    <a href="/" className="theme-btn btn-style-one light">
                       <span>WHO WE ARE IS WHAT WE DO</span>
                     </a>
                   </div>
@@ -54,17 +58,21 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="swiper-slide" style={{ backgroundImage: `url(${BgImg})` }}>
+          <div
+            className="swiper-slide"
+            style={{ backgroundImage: `url(${BgImg})` }}
+          >
             <div className="content-outer">
               <div className="content-box">
                 <div className="inner">
                   <h1>Natural Materials Earthy Palettes</h1>
                   <div className="text">
-                    Luxury Interior Designing lorem ipsum dolor sit amet consectetur adipisicing <br /> elit sed eiusmod
-                    tempor incididunt labore dolore magna aliqua.
+                    Luxury Interior Designing lorem ipsum dolor sit amet
+                    consectetur adipisicing <br /> elit sed eiusmod tempor
+                    incididunt labore dolore magna aliqua.
                   </div>
                   <div className="link-box">
-                    <a href="#" className="theme-btn btn-style-one light">
+                    <a href="/" className="theme-btn btn-style-one light">
                       <span>WHO WE ARE IS WHAT WE DO</span>
                     </a>
                   </div>
@@ -73,17 +81,21 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="swiper-slide" style={{ backgroundImage: `url(${BgImg})` }}>
+          <div
+            className="swiper-slide"
+            style={{ backgroundImage: `url(${BgImg})` }}
+          >
             <div className="content-outer">
               <div className="content-box">
                 <div className="inner">
                   <h1>Natural Materials Earthy Palettes</h1>
                   <div className="text">
-                    Luxury Interior Designing lorem ipsum dolor sit amet consectetur adipisicing <br /> elit sed eiusmod
-                    tempor incididunt labore dolore magna aliqua.
+                    Luxury Interior Designing lorem ipsum dolor sit amet
+                    consectetur adipisicing <br /> elit sed eiusmod tempor
+                    incididunt labore dolore magna aliqua.
                   </div>
                   <div className="link-box">
-                    <a href="#" className="theme-btn btn-style-one light">
+                    <a href="/" className="theme-btn btn-style-one light">
                       <span>WHO WE ARE IS WHAT WE DO</span>
                     </a>
                   </div>

@@ -16,33 +16,34 @@ const Footer = () => {
                   <div className="widget about-widget">
                     <h3 className="widget-title">About intervio</h3>
                     <div className="text">
-                      Beyond more stoic this along goodness this sed wow manatee mongos flusterd impressive man farcrud
-                      opened inside owin punitively around after.
+                      Beyond more stoic this along goodness this sed wow manatee
+                      mongos flusterd impressive man farcrud opened inside owin
+                      punitively around after.
                     </div>
                     <div className="social-links">
                       <ul>
                         <li>
-                          <a href="#">
+                          <a href="/">
                             <i className="fab fa-facebook-f"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/">
                             <i className="fab fa-twitter"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/">
                             <i className="fab fa-google-plus-g"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/">
                             <i className="fab fa-pinterest-p"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/">
                             <i className="fab fa-instagram"></i>
                           </a>
                         </li>
@@ -61,22 +62,22 @@ const Footer = () => {
                     <div className="widget-content">
                       <ul>
                         <li>
-                          <a href="#">Architecture</a>
+                          <a href="/">Architecture</a>
                         </li>
                         <li>
-                          <a href="#">Home Lighting</a>
+                          <a href="/">Home Lighting</a>
                         </li>
                         <li>
-                          <a href="#">Landscape Design</a>
+                          <a href="/">Landscape Design</a>
                         </li>
                         <li>
-                          <a href="#">Floor Planning</a>
+                          <a href="/">Floor Planning</a>
                         </li>
                         <li>
-                          <a href="#">Interior Design</a>
+                          <a href="/">Interior Design</a>
                         </li>
                         <li>
-                          <a href="#">Exterior Works</a>
+                          <a href="/">Exterior Works</a>
                         </li>
                       </ul>
                     </div>
@@ -109,7 +110,8 @@ const Footer = () => {
       <div className="auto-container">
         <div className="footer-bottom">
           <div className="copyright">
-            <a href="#">INTERVIO</a> - Design &amp; Architect &copy; All rights reserved.
+            <a href="/">INTERVIO</a> - Design &amp; Architect &copy; All rights
+            reserved.
           </div>
         </div>
       </div>
