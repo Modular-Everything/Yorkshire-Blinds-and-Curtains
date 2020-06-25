@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import $ from 'jquery';
 
 import Logo from '../../../../static/images/logo.png';
@@ -149,8 +150,8 @@ const Header = () => {
           <div className="inner-container">
             <div className="logo-box">
               <div className="logo">
-                <a href="index.html">
-                  <img src={Logo} alt="" />
+                <a href="index.html" className="logo-box logo">
+                  <h2>Yorkshire Blinds &amp; Curtains</h2>
                 </a>
               </div>
             </div>
@@ -239,3 +240,11 @@ const Header = () => {
 };
 
 export default Header;
+
+// ====
+
+export const DATA = useStaticQuery(graphql`
+  query MyQuery {
+    __typename ## Placeholder value
+  }
+`);
