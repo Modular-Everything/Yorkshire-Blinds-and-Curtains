@@ -30,7 +30,7 @@ const Testimonials = () => {
         swiper: testimonialThumb,
       },
     });
-  });
+  }, []);
 
   return (
     <section className="testimonial-section">

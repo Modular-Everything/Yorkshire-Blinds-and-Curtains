@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
-import { TweenMax } from 'gsap';
+import { TweenMax, Expo } from 'gsap';
 
 // =====================
 // Preloader
@@ -17,11 +17,11 @@ const Preloader = () => {
     });
 
     if ($('.preloader-close').length) {
-      $('.preloader-close').on('click', function () {
+      $('.preloader-close').on('click', function closePreloader() {
         $('.loader-wrap').delay(200).fadeOut(500);
       });
     }
-  });
+  }, []);
 
   return (
     <div className="loader-wrap">
@@ -29,13 +29,13 @@ const Preloader = () => {
         <div className="preloader-close">Preloader Close</div>
       </div>
       <div className="layer layer-one">
-        <span className="overlay"></span>
+        <span className="overlay" />
       </div>
       <div className="layer layer-two">
-        <span className="overlay"></span>
+        <span className="overlay" />
       </div>
       <div className="layer layer-three">
-        <span className="overlay"></span>
+        <span className="overlay" />
       </div>
     </div>
   );

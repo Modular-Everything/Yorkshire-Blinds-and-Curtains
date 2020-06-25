@@ -29,7 +29,7 @@ const Banner = () => {
         prevEl: '.banner-slider-button-prev',
       },
     });
-  });
+  }, []);
 
   return (
     <section className="banner-section">

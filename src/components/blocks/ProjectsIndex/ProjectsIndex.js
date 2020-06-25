@@ -10,7 +10,7 @@ import PlaceholderImg from '../../../../static/images/resource/image-5.jpg';
 const ProjectsIndex = () => {
   useEffect(() => {
     WowReveal();
-  });
+  }, []);
 
   return (
     <section className="projects-section">

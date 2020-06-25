@@ -10,7 +10,7 @@ import PlaceholderImg from '../../../../static/images/resource/image-1.png';
 const AboutUs = () => {
   useEffect(() => {
     WowReveal();
-  });
+  }, []);
 
   return (
     <section className="about-us-section">

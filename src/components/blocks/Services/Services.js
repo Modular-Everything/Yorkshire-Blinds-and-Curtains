@@ -10,7 +10,7 @@ import PlaceholderImg from '../../../../static/images/resource/image-7.jpg';
 const Services = () => {
   useEffect(() => {
     WowReveal();
-  });
+  }, []);
 
   return (
     <section className="services-section">
@@ -19,7 +19,7 @@ const Services = () => {
       <div className="auto-container">
         <div className="sec-title text-center">
           <div className="shape-one" />
-          <span className="sec-title-dec"></span>
+          <span className="sec-title-dec" />
           <h2>Luxurious &amp; Innovative Services</h2>
           <div className="text">
             Flusterd impressive man farcrud open inside owin punitively around

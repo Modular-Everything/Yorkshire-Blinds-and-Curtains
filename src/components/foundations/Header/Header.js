@@ -11,6 +11,14 @@ import IconBar from '../../../../static/images/icons/icon-bar.png';
 // =====================
 
 const Header = () => {
+  const DATA = useStaticQuery(graphql`
+    query MyQuery {
+      __typename ## Placeholder value
+    }
+  `);
+
+  console.log(DATA);
+
   useEffect(() => {
     function headerStyle() {
       const windowpos = $(window).scrollTop();
@@ -168,7 +176,7 @@ const Header = () => {
             </div>
             <div className="navbar-right-info">
               <div className="phone-number">
-                <i className="fas fa-phone"></i>
+                <i className="fas fa-phone" />
                 <a href="tel:+1 (234)5018607">+1 (234) 501 8607</a>
               </div>
             </div>
@@ -191,7 +199,7 @@ const Header = () => {
       <div className="mobile-menu">
         <div className="menu-backdrop" />
         <div className="close-btn">
-          <span className="icon flaticon-remove"></span>
+          <span className="icon flaticon-remove" />
         </div>
 
         <nav className="menu-box">
@@ -205,27 +213,27 @@ const Header = () => {
               <ul className="clearfix">
                 <li>
                   <a href="/">
-                    <span className="fab fa-twitter"></span>
+                    <span className="fab fa-twitter" />
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <span className="fab fa-facebook-square"></span>
+                    <span className="fab fa-facebook-square" />
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <span className="fab fa-pinterest-p"></span>
+                    <span className="fab fa-pinterest-p" />
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <span className="fab fa-instagram"></span>
+                    <span className="fab fa-instagram" />
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <span className="fab fa-youtube"></span>
+                    <span className="fab fa-youtube" />
                   </a>
                 </li>
               </ul>
@@ -243,11 +251,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// ====
-
-// export const DATA = useStaticQuery(graphql`
-//   query MyQuery {
-//     __typename ## Placeholder value
-//   }
-// `);
