@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import $ from 'jquery';
 
 import Logo from '../../../../static/images/logo.png';
 import LogoTwo from '../../../../static/images/logo-two.png';
@@ -9,6 +10,138 @@ import IconBar from '../../../../static/images/icons/icon-bar.png';
 // =====================
 
 const Header = () => {
+  useEffect(() => {
+    function headerStyle() {
+      const windowpos = $(window).scrollTop();
+      const siteHeader = $('.main-header');
+      const scrollLink = $('.scroll-to-top');
+      const sticky_header = $('.main-header .sticky-header');
+      if (windowpos > 100) {
+        siteHeader.addClass('fixed-header');
+        sticky_header.addClass('animated slideInDown');
+        scrollLink.fadeIn(300);
+      } else {
+        siteHeader.removeClass('fixed-header');
+        sticky_header.removeClass('animated slideInDown');
+        scrollLink.fadeOut(300);
+      }
+    }
+
+    headerStyle();
+
+    $(window).on('scroll', function () {
+      headerStyle();
+    });
+  }, []);
+
+  const navContent = (
+    <nav className="main-menu navbar-expand-md navbar-light">
+      <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+        <ul className="navigation clearfix">
+          <li className="dropdown">
+            <a href="index.html">Home</a>
+            <ul>
+              <li>
+                <a href="index.html">Home One</a>
+              </li>
+              <li>
+                <a href="index-2.html">Home Two</a>
+              </li>
+              <li>
+                <a href="index-3.html">Home Three</a>
+              </li>
+              <li>
+                <a href="index-4.html">Home Four</a>
+              </li>
+              <li>
+                <a href="index-5.html">Home Five</a>
+              </li>
+              <li>
+                <a href="index-6.html">Home Six</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li className="dropdown">
+            <a href="#">Services</a>
+            <ul>
+              <li>
+                <a href="services.html">Services</a>
+              </li>
+              <li>
+                <a href="interior.html">Interior Design</a>
+              </li>
+              <li>
+                <a href="architecture.html">Architecture Design</a>
+              </li>
+              <li>
+                <a href="renovation.html">Renovation</a>
+              </li>
+              <li>
+                <a href="lighting.html">Lighting</a>
+              </li>
+            </ul>
+          </li>
+          <li className="dropdown">
+            <a href="#">Pages</a>
+            <ul>
+              <li>
+                <a href="history.html">History</a>
+              </li>
+              <li>
+                <a href="team.html">Our Team</a>
+              </li>
+              <li>
+                <a href="pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a href="404.html">404</a>
+              </li>
+            </ul>
+          </li>
+          <li className="dropdown">
+            <a href="#">Portfolio</a>
+            <ul>
+              <li>
+                <a href="portfolio-1.html">Portfolio Style 01</a>
+              </li>
+              <li>
+                <a href="portfolio-2.html">Portfolio Style 02</a>
+              </li>
+            </ul>
+          </li>
+          <li className="dropdown">
+            <a href="#">Blog</a>
+            <ul>
+              <li>
+                <a href="blog.html">Blog Grid</a>
+              </li>
+              <li>
+                <a href="blog-2.html">Blog Classic</a>
+              </li>
+              <li>
+                <a href="blog-details.html">Blog Details</a>
+              </li>
+            </ul>
+          </li>
+          <li className="dropdown">
+            <a href="#">Contact</a>
+            <ul>
+              <li>
+                <a href="contact-1.html">Contact 01</a>
+              </li>
+              <li>
+                <a href="contact-2.html">Contact 02</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+
   return (
     <header className="main-header header-style-one">
       <div className="header-upper">
@@ -27,111 +160,7 @@ const Header = () => {
                 <img src={IconBar} alt="" />
               </div>
 
-              <nav className="main-menu navbar-expand-md navbar-light">
-                <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                  <ul className="navigation clearfix">
-                    <li className="dropdown">
-                      <a href="index.html">Home</a>
-                      <ul>
-                        <li>
-                          <a href="index.html">Home One</a>
-                        </li>
-                        <li>
-                          <a href="index-2.html">Home Two</a>
-                        </li>
-                        <li>
-                          <a href="index-3.html">Home Three</a>
-                        </li>
-                        <li>
-                          <a href="index-4.html">Home Four</a>
-                        </li>
-                        <li>
-                          <a href="index-5.html">Home Five</a>
-                        </li>
-                        <li>
-                          <a href="index-6.html">Home Six</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li className="dropdown">
-                      <a href="#">Services</a>
-                      <ul>
-                        <li>
-                          <a href="services.html">Services</a>
-                        </li>
-                        <li>
-                          <a href="interior.html">Interior Design</a>
-                        </li>
-                        <li>
-                          <a href="architecture.html">Architecture Design</a>
-                        </li>
-                        <li>
-                          <a href="renovation.html">Renovation</a>
-                        </li>
-                        <li>
-                          <a href="lighting.html">Lighting</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="dropdown">
-                      <a href="#">Pages</a>
-                      <ul>
-                        <li>
-                          <a href="history.html">History</a>
-                        </li>
-                        <li>
-                          <a href="team.html">Our Team</a>
-                        </li>
-                        <li>
-                          <a href="pricing.html">Pricing</a>
-                        </li>
-                        <li>
-                          <a href="404.html">404</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="dropdown">
-                      <a href="#">Portfolio</a>
-                      <ul>
-                        <li>
-                          <a href="portfolio-1.html">Portfolio Style 01</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-2.html">Portfolio Style 02</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="dropdown">
-                      <a href="#">Blog</a>
-                      <ul>
-                        <li>
-                          <a href="blog.html">Blog Grid</a>
-                        </li>
-                        <li>
-                          <a href="blog-2.html">Blog Classic</a>
-                        </li>
-                        <li>
-                          <a href="blog-details.html">Blog Details</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="dropdown">
-                      <a href="#">Contact</a>
-                      <ul>
-                        <li>
-                          <a href="contact-1.html">Contact 01</a>
-                        </li>
-                        <li>
-                          <a href="contact-2.html">Contact 02</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+              {navContent}
             </div>
             <div className="navbar-right-info">
               <div className="phone-number">
@@ -151,9 +180,7 @@ const Header = () => {
             </a>
           </div>
 
-          <div className="float-right">
-            <nav className="main-menu clearfix"></nav>
-          </div>
+          <div className="float-right">{navContent}</div>
         </div>
       </div>
 
