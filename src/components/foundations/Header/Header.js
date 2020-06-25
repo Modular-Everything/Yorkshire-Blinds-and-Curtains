@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import $ from 'jquery';
 
-import Logo from '../../../../static/images/logo.png';
 import LogoTwo from '../../../../static/images/logo-two.png';
 import IconBar from '../../../../static/images/icons/icon-bar.png';
 
@@ -12,12 +11,21 @@ import IconBar from '../../../../static/images/icons/icon-bar.png';
 
 const Header = () => {
   const DATA = useStaticQuery(graphql`
-    query MyQuery {
-      __typename ## Placeholder value
+    query SiteSettingsQuery {
+      storyblokEntry(slug: { eq: "site-settings" }) {
+        content
+      }
     }
   `);
 
-  console.log(DATA);
+  let doc;
+  if (DATA) {
+    doc = JSON.parse(DATA.storyblokEntry.content);
+  } else {
+    return null;
+  }
+
+  // ==
 
   useEffect(() => {
     function headerStyle() {
@@ -42,6 +50,8 @@ const Header = () => {
       headerStyle();
     });
   }, []);
+
+  // ==
 
   const navContent = (
     <nav className="main-menu navbar-expand-md navbar-light">
@@ -154,6 +164,8 @@ const Header = () => {
     </nav>
   );
 
+  // ==
+
   return (
     <header className="main-header header-style-one">
       <div className="header-upper">
@@ -162,7 +174,7 @@ const Header = () => {
             <div className="logo-box">
               <div className="logo">
                 <a href="index.html" className="logo-box logo">
-                  <h2>Yorkshire Blinds &amp; Curtains</h2>
+                  <h2>{doc.site_name}</h2>
                 </a>
               </div>
             </div>
@@ -171,7 +183,6 @@ const Header = () => {
               <div className="mobile-nav-toggler">
                 <img src={IconBar} alt="" />
               </div>
-
               {navContent}
             </div>
             <div className="navbar-right-info">
@@ -188,10 +199,9 @@ const Header = () => {
         <div className="auto-container clearfix">
           <div className="logo float-left">
             <a href="index.html" title="">
-              <img src={LogoTwo} alt="" title="" />
+              <h2>{doc.site_name}</h2>
             </a>
           </div>
-
           <div className="float-right">{navContent}</div>
         </div>
       </div>
@@ -205,7 +215,7 @@ const Header = () => {
         <nav className="menu-box">
           <div className="nav-logo">
             <a href="index.html">
-              <img src={Logo} alt="" title="" />
+              <h2>{doc.site_name}</h2>
             </a>
           </div>
           <div className="menu-outer">
