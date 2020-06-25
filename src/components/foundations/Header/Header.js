@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import $ from 'jquery';
 
-import LogoTwo from '../../../../static/images/logo-two.png';
 import IconBar from '../../../../static/images/icons/icon-bar.png';
 
 // =====================
