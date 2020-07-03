@@ -1,29 +1,28 @@
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
 
-import BgImg from '../../../../static/images/main-slider/image-1.jpg';
-
 // =====================
 // Banner
 // =====================
 
-const Banner = () => {
+const Banner = ({ blok }) => {
+  const { slides } = blok;
+  const single = slides.length === 1;
+
   useEffect(() => {
-    new Swiper('.banner-slider', {
-      preloadImages: false,
-      loop: true,
-      grabCursor: true,
+    // eslint-disable-next-line no-unused-vars
+    const SwipeContainer = new Swiper('.banner-slider', {
+      preloadImages: true,
+      loop: !single,
+      grabCursor: !single,
       centeredSlides: false,
       resistance: true,
-      resistanceRatio: 0.6,
+      resistanceRatio: single ? 0 : 0.6,
       speed: 1400,
       spaceBetween: 0,
       parallax: false,
       effect: 'slide',
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
+      autoplay: false,
       navigation: {
         nextEl: '.banner-slider-button-next',
         prevEl: '.banner-slider-button-prev',
@@ -35,88 +34,55 @@ const Banner = () => {
     <section className="banner-section">
       <div className="swiper-container banner-slider">
         <div className="swiper-wrapper">
-          <div
-            className="swiper-slide"
-            style={{ backgroundImage: `url(${BgImg})` }}
-          >
-            <div className="content-outer">
-              <div className="content-box">
-                <div className="inner">
-                  <h1>Natural Materials Earthy Palettes</h1>
-                  <div className="text">
-                    Luxury Interior Designing lorem ipsum dolor sit amet
-                    consectetur adipisicing <br /> elit sed eiusmod tempor
-                    incididunt labore dolore magna aliqua.
-                  </div>
-                  <div className="link-box">
-                    <a href="/" className="theme-btn btn-style-one light">
-                      <span>WHO WE ARE IS WHAT WE DO</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {slides.map((node) => {
+            const { title, copy, cta, link } = node;
+            const innerContent = !!(title || copy || cta || link.url);
 
-          <div
-            className="swiper-slide"
-            style={{ backgroundImage: `url(${BgImg})` }}
-          >
-            <div className="content-outer">
-              <div className="content-box">
-                <div className="inner">
-                  <h1>Natural Materials Earthy Palettes</h1>
-                  <div className="text">
-                    Luxury Interior Designing lorem ipsum dolor sit amet
-                    consectetur adipisicing <br /> elit sed eiusmod tempor
-                    incididunt labore dolore magna aliqua.
-                  </div>
-                  <div className="link-box">
-                    <a href="/" className="theme-btn btn-style-one light">
-                      <span>WHO WE ARE IS WHAT WE DO</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="swiper-slide"
-            style={{ backgroundImage: `url(${BgImg})` }}
-          >
-            <div className="content-outer">
-              <div className="content-box">
-                <div className="inner">
-                  <h1>Natural Materials Earthy Palettes</h1>
-                  <div className="text">
-                    Luxury Interior Designing lorem ipsum dolor sit amet
-                    consectetur adipisicing <br /> elit sed eiusmod tempor
-                    incididunt labore dolore magna aliqua.
-                  </div>
-                  <div className="link-box">
-                    <a href="/" className="theme-btn btn-style-one light">
-                      <span>WHO WE ARE IS WHAT WE DO</span>
-                    </a>
+            return (
+              <div
+                className="swiper-slide"
+                style={{ backgroundImage: `url(${node.image.filename})` }}
+              >
+                <div className="content-outer">
+                  <div className="content-box">
+                    {innerContent && (
+                      <div className="inner">
+                        {title && <h1>{title}</h1>}
+                        {copy && <div className="text">{copy}</div>}
+                        {link.url && (
+                          <div className="link-box">
+                            <a
+                              href={link}
+                              className="theme-btn btn-style-one light"
+                            >
+                              <span>{cta || `FIND OUT MORE`}</span>
+                            </a>
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
-      <div className="banner-slider-nav">
-        <div className="banner-slider-control banner-slider-button-prev">
-          <span>
-            <i className="far fa-angle-left" />
-          </span>
+
+      {!single && (
+        <div className="banner-slider-nav">
+          <div className="banner-slider-control banner-slider-button-prev">
+            <span>
+              <i className="far fa-angle-left" />
+            </span>
+          </div>
+          <div className="banner-slider-control banner-slider-button-next">
+            <span>
+              <i className="far fa-angle-right" />
+            </span>
+          </div>
         </div>
-        <div className="banner-slider-control banner-slider-button-next">
-          <span>
-            <i className="far fa-angle-right" />
-          </span>
-        </div>
-      </div>
+      )}
     </section>
   );
 };
