@@ -1,5 +1,5 @@
 /* eslint-disable no-underscore-dangle */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Components from '../components/storyblok/Storyblok';
 
@@ -14,7 +14,7 @@ class StoryblokEntry extends React.Component {
   }
 
   static prepareStory(props) {
-    const story = Object.assign({}, props.pageContext.story);
+    const story = { ...props.pageContext.story };
     story.content = JSON.parse(story.content);
     return { story };
   }
@@ -25,7 +25,7 @@ class StoryblokEntry extends React.Component {
   }
 
   render() {
-    const content = this.state.story.content;
+    const { content } = this.state.story;
 
     return (
       <>
