@@ -11,13 +11,14 @@ const SEO = ({ page }) => {
         siteMetadata {
           title
           description
+          postAuthor
           baseUrl
         }
       }
     }
   `);
 
-  const defaults = DATA.storyblokEntry;
+  const defaults = DATA.site.siteMetadata;
 
   if (defaults.baseUrl === '' && typeof window !== 'undefined') {
     defaults.baseUrl = window.location.origin;
@@ -29,7 +30,9 @@ const SEO = ({ page }) => {
     return null;
   }
 
-  const { title, description } = defaults;
+  const { postAuthor } = defaults;
+  const title = page.title || defaults.title;
+  const description = page.description || defaults.description;
   const url = new URL(page.path || '', defaults.baseUrl);
   const image = page.image ? new URL(page.image, defaults.baseUrl) : false;
 
@@ -47,7 +50,7 @@ const SEO = ({ page }) => {
       {image && <meta property="og:image" content={image} />}
 
       <meta name="twitter:card" content="summary_large_image" />
-      {/* <meta name="twitter:creator" content={post.author.twitter} /> */}
+      <meta name="twitter:creator" content={postAuthor} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {image && <meta name="twitter:image" content={image} />}

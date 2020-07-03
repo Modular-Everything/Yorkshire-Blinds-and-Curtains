@@ -1,5 +1,6 @@
+/* eslint-disable camelcase */
 /* eslint-disable no-underscore-dangle */
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Components from '../components/storyblok/Storyblok';
 
@@ -27,11 +28,19 @@ class StoryblokEntry extends React.Component {
   render() {
     const { content } = this.state.story;
 
+    const { full_slug, parent_id } = this.props.pageContext.story;
+    const { seo_title, seo_description, seo_image } = content;
+
+    const context = { full_slug, parent_id };
+    const seo = { seo_title, seo_description, seo_image };
+
     return (
       <>
         {React.createElement(Components(content.component), {
           key: content._uid,
           blok: content,
+          context,
+          seo,
         })}
       </>
     );

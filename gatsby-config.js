@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'Yorkshire Blinds & Curtains',
-    description: 'Made to measure Blinds Curtains and Shutters',
+    description:
+      'Yorkshire-based specialists creating made to measure blinds, curtains and Shutters.',
     baseUrl: '',
+    postAuthor: 'John Beevers',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
