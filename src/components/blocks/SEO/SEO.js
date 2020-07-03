@@ -31,7 +31,7 @@ const SEO = ({ page }) => {
   }
 
   const { postAuthor } = defaults;
-  const title = page.title || defaults.title;
+  const title = `${page.title} | ${defaults.title}` || defaults.title;
   const description = page.description || defaults.description;
   const url = new URL(page.path || '', defaults.baseUrl);
   const image = page.image ? new URL(page.image, defaults.baseUrl) : false;
