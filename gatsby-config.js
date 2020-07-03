@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Yorkshire Blinds & Curtains',
+    description: 'Made to measure Blinds Curtains and Shutters',
+    baseUrl: '',
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -6,7 +11,6 @@ module.exports = {
       options: {
         accessToken: 'xPwQr6eLKQf9CFeneKnYUgtt',
         resolveLinks: true,
-        // resolveRelations: ['sectors_list', 'clients_list', 'testimonials_list'],
         homeSlug: 'home',
         version: 'draft',
       },
