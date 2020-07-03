@@ -16,8 +16,6 @@ const Page = ({ blok, context, seo }) => {
 
   if (!blok) return null;
 
-  console.log(seo);
-
   return (
     <Layout>
       <SEO
@@ -32,6 +30,7 @@ const Page = ({ blok, context, seo }) => {
       {blok.body.map((node) =>
         React.createElement(Components(node.component), {
           key: node._uid,
+          blok: node,
         }),
       )}
     </Layout>
