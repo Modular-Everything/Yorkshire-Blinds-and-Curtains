@@ -10,8 +10,6 @@ const Banner = ({ blok }) => {
   const { slides } = blok;
   const single = slides.length === 1;
 
-  console.log(blok);
-
   useEffect(() => {
     // eslint-disable-next-line no-unused-vars
     const SwipeContainer = new Swiper('.banner-slider', {
