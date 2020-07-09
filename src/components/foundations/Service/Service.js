@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -8,11 +9,13 @@ import SEO from '../../blocks/SEO';
 
 // ====
 
-const Page = ({ blok, context, seo }) => {
+const Service = ({ blok, context, seo }) => {
   const { full_slug } = context;
   const { seo_title, seo_description, seo_image } = seo;
 
   if (!blok) return null;
+
+  const { service_meta_image } = blok;
 
   return (
     <Layout>
@@ -21,7 +24,7 @@ const Page = ({ blok, context, seo }) => {
           path: full_slug,
           title: seo_title,
           description: seo_description,
-          image: seo_image || false,
+          image: seo_image || service_meta_image || false,
         }}
       />
 
@@ -36,4 +39,4 @@ const Page = ({ blok, context, seo }) => {
   );
 };
 
-export default Page;
+export default Service;

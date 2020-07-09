@@ -1,5 +1,6 @@
 import ComponentNotFound from './ComponentNotFound';
 import Page from '../foundations/Page';
+import Service from '../foundations/Service';
 
 import Banner from '../blocks/Banner';
 import AboutUs from '../blocks/AboutUs';
@@ -11,6 +12,7 @@ import Testimonials from '../blocks/Testimonials';
 
 const ComponentList = {
   page: Page,
+  service: Service,
   banner: Banner,
   about_us: AboutUs,
   projects_index: ProjectsIndex,

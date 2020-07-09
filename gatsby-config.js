@@ -13,6 +13,7 @@ module.exports = {
       options: {
         accessToken: 'xPwQr6eLKQf9CFeneKnYUgtt',
         resolveLinks: true,
+        resolveRelations: ['services.services_selection'],
         homeSlug: 'home',
         version: 'draft',
       },
