@@ -13,7 +13,10 @@ module.exports = {
       options: {
         accessToken: 'xPwQr6eLKQf9CFeneKnYUgtt',
         resolveLinks: true,
-        resolveRelations: ['services.services_selection'],
+        resolveRelations: [
+          'services.services_selection',
+          'projects_index.project',
+        ],
         homeSlug: 'home',
         version: 'draft',
       },
