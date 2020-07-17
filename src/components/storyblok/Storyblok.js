@@ -11,6 +11,7 @@ import Testimonials from '../blocks/Testimonials';
 import Breadcrumb from '../blocks/Breadcrumb';
 import Process from '../blocks/Process';
 import LogoMatrix from '../blocks/LogoMatrix';
+import ButtonWithLink from '../blocks/ButtonWithLink';
 
 // ====
 
@@ -26,6 +27,7 @@ const ComponentList = {
   breadcrumb: Breadcrumb,
   process: Process,
   logo_matrix: LogoMatrix,
+  button_with_link: ButtonWithLink,
 };
 
 // ====

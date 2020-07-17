@@ -340,7 +340,7 @@ img {
   bottom: 110px;
   width: 54px;
   height: 54px;
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   line-height: 54px;
   text-align: center;
@@ -363,7 +363,7 @@ img {
 }
 
 .scroll-to-top:hover {
-  color: #ffffff;
+  color: #fff;
 }
 
 /*Btn Style One*/
@@ -374,7 +374,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 15.5px 45px;
   font-weight: 600;
   overflow: hidden;
@@ -916,11 +916,11 @@ img {
   top: 8px;
   width: 34px;
   height: 30px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   text-align: center;
   font-size: 16px;
   line-height: 26px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   z-index: 5;
   display: none;
@@ -986,7 +986,7 @@ img {
   right: 25px;
   top: 25px;
   font-size: 22px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   z-index: 5;
 }
@@ -1019,7 +1019,7 @@ img {
   position: relative;
   height: 70px;
   padding: 20px 220px 20px 30px;
-  background: #ffffff;
+  background: #fff;
   line-height: 30px;
   font-size: 24px;
   color: #233145;
@@ -1035,7 +1035,7 @@ img {
   width: 220px;
   height: 70px;
   padding: 20px 10px 20px 10px;
-  color: #ffffff !important;
+  color: #fff !important;
   line-height: 30px;
   font-size: 20px;
   cursor: pointer;
@@ -1047,7 +1047,7 @@ img {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 20px;
   letter-spacing: 1px;
   text-align: center;
@@ -1055,7 +1055,7 @@ img {
 
 .search-popup .recent-searches {
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 
@@ -1067,9 +1067,9 @@ img {
 .search-popup .recent-searches li a {
   display: block;
   line-height: 24px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   padding: 7px 15px;
-  color: #ffffff;
+  color: #fff;
   border-radius: 3px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -1099,7 +1099,7 @@ img {
   width: 100%;
   padding: 0 0;
   z-index: -1;
-  background: #ffffff;
+  background: #fff;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -1594,7 +1594,7 @@ img {
   width: 24px;
   text-align: center;
   font-size: 30px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   z-index: 10;
   -webkit-transition: all 0.9s ease;
@@ -1630,7 +1630,7 @@ img {
   padding: 10px 25px;
   font-size: 15px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -1667,7 +1667,7 @@ img {
   text-align: center;
   font-size: 16px;
   line-height: 32px;
-  color: #ffffff;
+  color: #fff;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   border-radius: 2px;
@@ -1704,7 +1704,7 @@ img {
   position: relative;
   line-height: 32px;
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -1719,7 +1719,7 @@ img {
   z-index: 9999;
   width: 100%;
   max-width: 470px;
-  background: #ffffff;
+  background: #fff;
   height: 100%;
   padding: 40px 45px;
   overflow: auto;
@@ -2062,7 +2062,7 @@ img {
   position: relative;
   font-size: 66px;
   line-height: 70px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 500;
   text-transform: capitalize;
   opacity: 0;
@@ -2103,7 +2103,7 @@ img {
   display: block;
   font-size: 16px;
   line-height: 1.2em;
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -2166,7 +2166,7 @@ img {
   position: relative;
   font-size: 24px;
   line-height: 36px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 300;
   opacity: 0;
   visibility: hidden;
@@ -2251,7 +2251,7 @@ img {
   line-height: 60px;
   border-radius: 50%;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   z-index: 9;
   margin-right: 40px;
@@ -2267,7 +2267,7 @@ img {
   line-height: 60px;
   border-radius: 50%;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   z-index: 9;
   margin-left: 40px;
@@ -3673,6 +3673,13 @@ img {
   color: #fff;
   font-size: 24px;
   margin-bottom: 30px;
+}
+
+.newsletter-section .text {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .newsletter-section input {
@@ -5338,8 +5345,8 @@ img {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background: #ccad6e;
-  color: #ffffff;
+  background: #806b40;
+  color: #fff;
   margin-right: 1px;
   cursor: pointer;
 }
@@ -5350,8 +5357,8 @@ img {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background: #ccad6e;
-  color: #ffffff;
+  background: #806b40;
+  color: #fff;
   margin-left: 1px;
   cursor: pointer;
 }
@@ -6131,7 +6138,7 @@ img {
   bottom: 0;
   right: 0;
   text-align: center;
-  background-color: #ccad6e;
+  background-color: #806b40;
   padding: 50px 0 40px;
 }
 
