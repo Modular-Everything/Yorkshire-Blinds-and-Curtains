@@ -12,6 +12,7 @@ import Breadcrumb from '../blocks/Breadcrumb';
 import Process from '../blocks/Process';
 import LogoMatrix from '../blocks/LogoMatrix';
 import ButtonWithLink from '../blocks/ButtonWithLink';
+import CTA from '../blocks/CTA';
 
 // ====
 
@@ -29,6 +30,7 @@ const ComponentList = {
   process: Process,
   logo_matrix: LogoMatrix,
   button_with_link: ButtonWithLink,
+  cta: CTA,
 };
 
 // ====

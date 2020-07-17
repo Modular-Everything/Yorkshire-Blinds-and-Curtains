@@ -5191,6 +5191,7 @@ img {
   font-size: 48px;
   font-weight: 300;
   letter-spacing: -3px;
+  max-width: 650px;
 }
 
 /* Services Section Style Two */
