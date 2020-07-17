@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
 import Img from 'react-cool-img';
@@ -21,7 +22,7 @@ const Testimonials = (props) => {
       effect: 'slide',
     });
 
-    new Swiper('.testimonial-content', {
+    const testimonialContent = new Swiper('.testimonial-content', {
       preloadImages: false,
       loop: true,
       speed: 2400,
@@ -32,8 +33,6 @@ const Testimonials = (props) => {
       },
     });
   }, []);
-
-  console.log(props);
 
   const { blok } = props;
   const { testimonial_bg, testimonials } = blok;
@@ -54,6 +53,10 @@ const Testimonials = (props) => {
                   <div className="swiper-slide">
                     <div className="author-thumb">
                       <Img
+                        placeholder={ImageHandler(
+                          node.author_thumb.filename,
+                          '15x15',
+                        )}
                         src={ImageHandler(
                           node.author_thumb.filename,
                           '300x300',
