@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
+import $ from 'jquery';
 import Swiper from 'swiper';
 import Img from 'react-cool-img';
 
@@ -12,16 +13,17 @@ import Richtext from '../Richtext';
 
 const Testimonials = (props) => {
   useEffect(() => {
+    const totalSlides = $('.swiper-container').length;
+
     const testimonialThumb = new Swiper('.testimonial-thumbs', {
       preloadImages: false,
       loop: true,
       speed: 2400,
-      slidesPerView: 3,
+      slidesPerView: totalSlides >= 3 ? 3 : totalSlides,
       centeredSlides: true,
       spaceBetween: 0,
       effect: 'slide',
     });
-
     const testimonialContent = new Swiper('.testimonial-content', {
       preloadImages: false,
       loop: true,
@@ -50,19 +52,21 @@ const Testimonials = (props) => {
             <div className="swiper-wrapper">
               {testimonials.map((node) => {
                 return (
-                  <div className="swiper-slide">
+                  <div className="swiper-slide" key={node.uid}>
                     <div className="author-thumb">
-                      <Img
-                        placeholder={ImageHandler(
-                          node.author_thumb.filename,
-                          '15x15',
-                        )}
-                        src={ImageHandler(
-                          node.author_thumb.filename,
-                          '300x300',
-                        )}
-                        alt={`A testimonial from ${node.author_source}`}
-                      />
+                      {node.author_thumb && (
+                        <Img
+                          placeholder={ImageHandler(
+                            node.author_thumb.filename,
+                            '15x15',
+                          )}
+                          src={ImageHandler(
+                            node.author_thumb.filename,
+                            '300x300',
+                          )}
+                          alt={`A testimonial from ${node.author_source}`}
+                        />
+                      )}
                     </div>
                   </div>
                 );
@@ -74,14 +78,16 @@ const Testimonials = (props) => {
             <div className="swiper-wrapper">
               {testimonials.map((node) => {
                 return (
-                  <div className="swiper-slide">
+                  <div className="swiper-slide" key={node.uid}>
                     <div className="testimonial-block">
                       <div className="inner-box">
                         <div className="quote">
                           <span className="flaticon-quote" />
                         </div>
                         <div className="text">
-                          <Richtext content={node.testimonial_quote} />
+                          {node.testimonial_quote && (
+                            <Richtext content={node.testimonial_quote} />
+                          )}
                         </div>
                         <div className="author-title">
                           {node.author_source}{' '}
