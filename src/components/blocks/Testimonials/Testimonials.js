@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import $ from 'jquery';
 import Swiper from 'swiper';
 import Img from 'react-cool-img';
+import SbEditable from 'storyblok-react';
 
 import ImageHandler from '../../../utils/ImageHandler';
 import Richtext from '../Richtext';
@@ -40,71 +41,73 @@ const Testimonials = (props) => {
   const { testimonial_bg, testimonials } = blok;
 
   return (
-    <section className="testimonial-section">
-      <div
-        className="sec-bg"
-        style={{ backgroundImage: `url(${testimonial_bg.filename})` }}
-      />
+    <SbEditable content={blok}>
+      <section className="testimonial-section">
+        <div
+          className="sec-bg"
+          style={{ backgroundImage: `url(${testimonial_bg.filename})` }}
+        />
 
-      <div className="auto-container">
-        <div className="testimonial-carousel">
-          <div className="swiper-container testimonial-thumbs">
-            <div className="swiper-wrapper">
-              {testimonials.map((node) => {
-                return (
-                  <div className="swiper-slide" key={node.uid}>
-                    <div className="author-thumb">
-                      {node.author_thumb && (
-                        <Img
-                          placeholder={ImageHandler(
-                            node.author_thumb.filename,
-                            '15x15',
-                          )}
-                          src={ImageHandler(
-                            node.author_thumb.filename,
-                            '300x300',
-                          )}
-                          alt={`A testimonial from ${node.author_source}`}
-                        />
-                      )}
+        <div className="auto-container">
+          <div className="testimonial-carousel">
+            <div className="swiper-container testimonial-thumbs">
+              <div className="swiper-wrapper">
+                {testimonials.map((node) => {
+                  return (
+                    <div className="swiper-slide" key={node.uid}>
+                      <div className="author-thumb">
+                        {node.author_thumb && (
+                          <Img
+                            placeholder={ImageHandler(
+                              node.author_thumb.filename,
+                              '15x15',
+                            )}
+                            src={ImageHandler(
+                              node.author_thumb.filename,
+                              '300x300',
+                            )}
+                            alt={`A testimonial from ${node.author_source}`}
+                          />
+                        )}
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
 
-          <div className="swiper-container testimonial-content">
-            <div className="swiper-wrapper">
-              {testimonials.map((node) => {
-                return (
-                  <div className="swiper-slide" key={node.uid}>
-                    <div className="testimonial-block">
-                      <div className="inner-box">
-                        <div className="quote">
-                          <span className="flaticon-quote" />
-                        </div>
-                        <div className="text">
-                          {node.testimonial_quote && (
-                            <Richtext content={node.testimonial_quote} />
-                          )}
-                        </div>
-                        <div className="author-title">
-                          {node.author_source}{' '}
-                          {node.author_company && (
-                            <span>{node.author_company}</span>
-                          )}
+            <div className="swiper-container testimonial-content">
+              <div className="swiper-wrapper">
+                {testimonials.map((node) => {
+                  return (
+                    <div className="swiper-slide" key={node.uid}>
+                      <div className="testimonial-block">
+                        <div className="inner-box">
+                          <div className="quote">
+                            <span className="flaticon-quote" />
+                          </div>
+                          <div className="text">
+                            {node.testimonial_quote && (
+                              <Richtext content={node.testimonial_quote} />
+                            )}
+                          </div>
+                          <div className="author-title">
+                            {node.author_source}{' '}
+                            {node.author_company && (
+                              <span>{node.author_company}</span>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </SbEditable>
   );
 };
 
