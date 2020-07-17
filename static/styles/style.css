@@ -106,6 +106,12 @@ button {
   margin: 0 0 15px;
 }
 
+.auto-container .text,
+.container .text {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
 ::-webkit-input-placeholder {
   color: inherit;
 }
@@ -3218,12 +3224,18 @@ img {
   text-align: center;
 }
 
+.process-block {
+  justify-content: center;
+  display: flex;
+}
+
 .process-block .inner-box {
   position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .process-block .icon {

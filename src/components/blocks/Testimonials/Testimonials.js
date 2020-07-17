@@ -12,7 +12,7 @@ import Richtext from '../Richtext';
 // Testimonials
 // =====================
 
-const Testimonials = (props) => {
+const Testimonials = ({ blok }) => {
   useEffect(() => {
     const totalSlides = $('.swiper-container').length;
 
@@ -37,7 +37,6 @@ const Testimonials = (props) => {
     });
   }, []);
 
-  const { blok } = props;
   const { testimonial_bg, testimonials } = blok;
 
   return (

@@ -4,8 +4,7 @@ import ImageHandler from '../../../utils/ImageHandler';
 
 // ====
 
-const Breadcrumb = (props) => {
-  const { blok } = props;
+const Breadcrumb = ({ blok }) => {
   const { breadcrumb_title, breadcrumb_subtitle, breadcrumb_image } = blok;
 
   return (
