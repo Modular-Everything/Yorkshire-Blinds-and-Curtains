@@ -18,7 +18,7 @@ module.exports = {
           'projects_index.project',
         ],
         homeSlug: 'home',
-        version: 'draft',
+        version: process.env.NODE_ENV === `production` ? `published` : `draft`,
       },
     },
   ],

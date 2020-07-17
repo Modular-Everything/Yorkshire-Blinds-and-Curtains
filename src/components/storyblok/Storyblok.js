@@ -17,6 +17,7 @@ import ButtonWithLink from '../blocks/ButtonWithLink';
 
 const ComponentList = {
   page: Page,
+  service_primary: Page,
   service: Service,
   project: Project,
   banner: Banner,
