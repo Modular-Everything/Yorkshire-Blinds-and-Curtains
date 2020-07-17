@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
 import SbEditable from 'storyblok-react';
+import Img from 'react-cool-img';
 
+import ImageHandler from '../../../utils/ImageHandler';
 import { WowReveal } from '../../../utils/wow';
 
 // =====================
@@ -51,9 +53,13 @@ const AboutUs = ({ blok }) => {
               <div className="image-block wow fadeInRight">
                 <div className="image">
                   {about_us_image && (
-                    <img
-                      src={about_us_image.filename}
-                      alt={about_us_image.alt}
+                    <Img
+                      placeholder={ImageHandler(
+                        about_us_image.filename,
+                        '15x15',
+                      )}
+                      src={ImageHandler(about_us_image.filename, '500x500')}
+                      alt={about_us_image.alt || null}
                     />
                   )}
                 </div>
