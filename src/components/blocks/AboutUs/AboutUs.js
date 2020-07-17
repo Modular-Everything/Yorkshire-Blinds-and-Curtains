@@ -30,23 +30,32 @@ const AboutUs = ({ blok }) => {
           <div className="row">
             <div className="col-lg-6">
               <div className="content wow fadeInUp">
-                <h2>{about_us_title}</h2>
+                <h2>{about_us_title && about_us_title}</h2>
                 {about_us_subtitle && <h4>{about_us_subtitle}</h4>}
-                <div className="text">{about_us_copy}</div>
-                <div className="link-btn">
-                  <a
-                    href={about_us_cta_link}
-                    className="theme-btn btn-style-two"
-                  >
-                    <span>{about_us_cta_label}</span>
-                  </a>
-                </div>
+
+                <div className="text">{about_us_copy && about_us_copy}</div>
+
+                {about_us_cta_label && (
+                  <div className="link-btn">
+                    <a
+                      href={about_us_cta_link}
+                      className="theme-btn btn-style-two"
+                    >
+                      <span>{about_us_cta_label}</span>
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
             <div className="col-lg-5 offset-lg-1">
               <div className="image-block wow fadeInRight">
                 <div className="image">
-                  <img src={about_us_image.filename} alt={about_us_image.alt} />
+                  {about_us_image && (
+                    <img
+                      src={about_us_image.filename}
+                      alt={about_us_image.alt}
+                    />
+                  )}
                 </div>
               </div>
             </div>

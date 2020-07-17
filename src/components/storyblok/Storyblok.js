@@ -8,6 +8,7 @@ import AboutUs from '../blocks/AboutUs';
 import ProjectsIndex from '../blocks/ProjectsIndex';
 import Services from '../blocks/Services';
 import Testimonials from '../blocks/Testimonials';
+import Breadcrumb from '../blocks/Breadcrumb';
 
 // ====
 
@@ -20,6 +21,7 @@ const ComponentList = {
   projects_index: ProjectsIndex,
   services: Services,
   testimonials: Testimonials,
+  breadcrumb: Breadcrumb,
 };
 
 // ====
