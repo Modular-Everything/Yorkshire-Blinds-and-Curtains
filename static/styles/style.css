@@ -661,7 +661,13 @@ img {
   margin-right: 0;
 }
 
-.main-menu .navigation > li > a {
+.main-menu .navigation > li > button {
+  background-color: transparent;
+  border: 0;
+}
+
+.main-menu .navigation > li > a,
+.main-menu .navigation > li > button {
   position: relative;
   display: block;
   text-align: center;

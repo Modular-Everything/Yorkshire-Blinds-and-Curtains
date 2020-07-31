@@ -1,7 +1,6 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
-import PropTypes from 'prop-types';
 import Components from '../components/storyblok/Storyblok';
 
 // ====

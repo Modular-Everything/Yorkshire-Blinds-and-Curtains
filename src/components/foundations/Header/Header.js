@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import $ from 'jquery';
 
 import IconBar from '../../../../static/images/icons/icon-bar.png';
@@ -59,104 +59,31 @@ const Header = () => {
         id="navbarSupportedContent"
       >
         <ul className="navigation clearfix">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about-us">About Us</Link>
+          </li>
           <li className="dropdown">
-            <a href="index.html">Home</a>
+            <button type="button">Services</button>
             <ul>
               <li>
-                <a href="index.html">Home One</a>
+                <Link to="/services/commercial">Commercial</Link>
               </li>
               <li>
-                <a href="index-2.html">Home Two</a>
-              </li>
-              <li>
-                <a href="index-3.html">Home Three</a>
-              </li>
-              <li>
-                <a href="index-4.html">Home Four</a>
-              </li>
-              <li>
-                <a href="index-5.html">Home Five</a>
-              </li>
-              <li>
-                <a href="index-6.html">Home Six</a>
+                <Link to="/services/residential">Residential</Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="about.html">About Us</a>
+            <Link to="/projects">Projects</Link>
           </li>
-          <li className="dropdown">
-            <a href="/">Services</a>
-            <ul>
-              <li>
-                <a href="services.html">Services</a>
-              </li>
-              <li>
-                <a href="interior.html">Interior Design</a>
-              </li>
-              <li>
-                <a href="architecture.html">Architecture Design</a>
-              </li>
-              <li>
-                <a href="renovation.html">Renovation</a>
-              </li>
-              <li>
-                <a href="lighting.html">Lighting</a>
-              </li>
-            </ul>
+          <li>
+            <Link to="/blog">Blog</Link>
           </li>
-          <li className="dropdown">
-            <a href="/">Pages</a>
-            <ul>
-              <li>
-                <a href="history.html">History</a>
-              </li>
-              <li>
-                <a href="team.html">Our Team</a>
-              </li>
-              <li>
-                <a href="pricing.html">Pricing</a>
-              </li>
-              <li>
-                <a href="404.html">404</a>
-              </li>
-            </ul>
-          </li>
-          <li className="dropdown">
-            <a href="/">Portfolio</a>
-            <ul>
-              <li>
-                <a href="portfolio-1.html">Portfolio Style 01</a>
-              </li>
-              <li>
-                <a href="portfolio-2.html">Portfolio Style 02</a>
-              </li>
-            </ul>
-          </li>
-          <li className="dropdown">
-            <a href="/">Blog</a>
-            <ul>
-              <li>
-                <a href="blog.html">Blog Grid</a>
-              </li>
-              <li>
-                <a href="blog-2.html">Blog Classic</a>
-              </li>
-              <li>
-                <a href="blog-details.html">Blog Details</a>
-              </li>
-            </ul>
-          </li>
-          <li className="dropdown">
-            <a href="/">Contact</a>
-            <ul>
-              <li>
-                <a href="contact-1.html">Contact 01</a>
-              </li>
-              <li>
-                <a href="contact-2.html">Contact 02</a>
-              </li>
-            </ul>
+          <li>
+            <Link to="/contact-us">Contact Us</Link>
           </li>
         </ul>
       </div>
