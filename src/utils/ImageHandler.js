@@ -3,6 +3,8 @@
 // ================
 
 module.exports = function ImageHandler(src, option) {
+  if (!src) return;
+
   const imageService = '//img2.storyblok.com/';
   const path = src.replace('https://a.storyblok.com', '');
 

@@ -1137,6 +1137,12 @@ img {
   display: none;
 }
 
+.sticky-header .main-menu .navigation > li > button {
+  background: transparent;
+  border: 0;
+}
+
+.sticky-header .main-menu .navigation > li > button,
 .sticky-header .main-menu .navigation > li > a {
   padding: 27px 0 !important;
   line-height: 30px;
