@@ -86,7 +86,7 @@ const Header = () => {
             <Link to="/contact-us">Contact Us</Link>
             <ul>
               <li>
-                <Link to="/appointment">Book an Appointment</Link>
+                <Link to="/book-an-appointment">Book an Appointment</Link>
               </li>
             </ul>
           </li>
