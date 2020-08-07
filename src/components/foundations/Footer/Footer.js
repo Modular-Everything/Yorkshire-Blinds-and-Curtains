@@ -1,10 +1,26 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 // =====================
 // Footer
 // =====================
 
 const Footer = () => {
+  const footerContent = useStaticQuery(graphql`
+    query siteSettingsQueryAndSiteSettingsQuery {
+      storyblokEntry(slug: { eq: "site-settings" }) {
+        content
+      }
+    }
+  `);
+
+  let footerContentData;
+  if (footerContent) {
+    footerContentData = JSON.parse(footerContent.storyblokEntry.content);
+  } else {
+    return null;
+  }
+
   return (
     <footer className="main-footer">
       <div className="auto-container">
@@ -14,11 +30,9 @@ const Footer = () => {
               <div className="row">
                 <div className="col-md-8">
                   <div className="widget about-widget">
-                    <h3 className="widget-title">About intervio</h3>
+                    <h3 className="widget-title">{footerContentData.site_name}</h3>
                     <div className="text">
-                      Beyond more stoic this along goodness this sed wow manatee
-                      mongos flusterd impressive man farcrud opened inside owin
-                      punitively around after.
+                      {footerContentData.site_description}
                     </div>
                     <div className="social-links">
                       <ul>
@@ -88,15 +102,15 @@ const Footer = () => {
                   <div className="widget-content">
                     <ul>
                       <li>
-                        address: <br /> 63 Nelson Base, Florida
+                        address: <br /> {footerContentData.company_address}
                       </li>
                       <li>
                         Phone: <br />
-                        <a href="tel:+1(234)5018607">+1 (234) 501 8607</a>
+                        <a href={`tel:+${footerContentData.company_telephone_wakefield}`}>{`+${footerContentData.company_telephone_wakefield}`}</a>
                       </li>
                       <li>
                         Email: <br />
-                        <a href="mailto:info@intervio.net">info@intervio.net</a>
+                        <a href={`mailto:${footerContentData.company_email}`}>{footerContentData.company_email}</a>
                       </li>
                     </ul>
                   </div>
@@ -110,7 +124,7 @@ const Footer = () => {
       <div className="auto-container">
         <div className="footer-bottom">
           <div className="copyright">
-            <a href="/">INTERVIO</a> - Design &amp; Architect &copy; All rights
+            <a href="/">{footerContentData.site_name}</a> - Design &amp; Architect &copy; All rights
             reserved.
           </div>
         </div>
