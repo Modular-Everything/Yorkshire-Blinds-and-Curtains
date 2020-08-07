@@ -124,7 +124,7 @@ const Footer = () => {
       <div className="auto-container">
         <div className="footer-bottom">
           <div className="copyright">
-            <a href="/">{footerContentData.site_name}</a> - Design &amp; Architect &copy; All rights
+            <a href="/">{footerContentData.site_name}</a> &copy; All rights
             reserved.
           </div>
         </div>
