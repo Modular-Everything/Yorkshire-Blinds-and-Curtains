@@ -14,6 +14,7 @@ import LogoMatrix from '../blocks/LogoMatrix';
 import ButtonWithLink from '../blocks/ButtonWithLink';
 import CTA from '../blocks/CTA';
 import Gallery from '../blocks/Gallery';
+import ContactUs from '../blocks/ContactUs';
 
 // ====
 
@@ -33,6 +34,7 @@ const ComponentList = {
   button_with_link: ButtonWithLink,
   cta: CTA,
   gallery: Gallery,
+  contact_us: ContactUs
 };
 
 // ====

@@ -7,6 +7,7 @@ import SbEditable from 'storyblok-react';
 // =====================
 
 const Banner = ({ blok }) => {
+  // console.log("Banner", block)
   const { slides } = blok;
   const single = slides.length === 1;
 

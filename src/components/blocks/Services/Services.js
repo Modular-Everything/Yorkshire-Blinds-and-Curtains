@@ -14,7 +14,6 @@ const Services = ({ blok }) => {
   }, []);
 
   const { services_title, services_copy, services_selection } = blok;
-
   return (
     <SbEditable content={blok}>
       <section className="services-section">
