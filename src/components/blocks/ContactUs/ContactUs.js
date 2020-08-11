@@ -6,38 +6,21 @@ import Image76 from '../../../../static/images/resource/image-76.jpg';
 // =====================
 
 const ContactUs = ({ blok }) => {
-  const {
-    company_address,
-    company_inquire_email,
-    company_project_email,
-    company_telephone_number,
-    company_toll_free_number } = blok;
+  const { contact_us_info } = blok;
   return (
     <section className="contact-section style-two">
       <div className="auto-container">
         <div className="contact-info-three">
           <div className="row">
-            <div className="col-lg-4">
-              <div className="content">
-                <div className="icon"><span className="flaticon-interface"></span></div>
-                <h4>Office Location</h4>
-                <div className="text">63 Nelson Base, Madison <br /> New Jersey 08003</div>
+            {contact_us_info.map((value, index) => (
+              <div className="col-lg-4" key={index}>
+                <div className="content">
+                  <div className="icon"><span className={value.contact_us_icon}></span></div>
+                  <h4>{value.contact_us_title}</h4>
+                  <div className="text">{value.contact_us_content}</div>
+                </div>
               </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="content">
-                <div className="icon"><span className="flaticon-technology"></span></div>
-                <h4>Discuss on Phone</h4>
-                <div className="text"><a href={`tel:${{ company_telephone_number }}`}>{company_telephone_number}</a> <br /> Toll Free <a href={`tel:${{ company_toll_free_number }}`}>{company_toll_free_number}</a></div>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="content">
-                <div className="icon"><span className="flaticon-envelopes"></span></div>
-                <h4>Send an Email</h4>
-                <div className="text"><a href={`mailto:${company_inquire_email}`}>{company_inquire_email}</a> <br /> <a href={`mailto:${company_project_email}`}>{company_project_email}</a></div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div className="wrapper-box mb-30">
