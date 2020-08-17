@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import SbEditable from 'storyblok-react';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 
 import { WowReveal } from '../../../utils/wow';
 import PlaceholderImg from '../../../../static/images/resource/image-7.jpg';
@@ -12,6 +13,25 @@ const Services = ({ blok }) => {
   useEffect(() => {
     WowReveal();
   }, []);
+
+  // storyblokEntry(content: {}) {
+  //   content
+  // }
+
+  const DATA = useStaticQuery(graphql`
+    query MetaTag {
+      storyblokEntry(content: {}) {
+        content
+      }
+    }
+  `);
+
+  let cov_image;
+  if (DATA) {
+    cov_image = JSON.parse(DATA.storyblokEntry.content);
+  } else {
+    return null;
+  }
 
   const { services_title, services_copy, services_selection } = blok;
 
@@ -34,7 +54,7 @@ const Services = ({ blok }) => {
               return (
                 <div
                   className="service-block-one col-lg-4 col-md-6"
-                  key={!content ? index : content._uid}
+                  key={!content ? index : index}
                 >
                   <div
                     className="inner-box wow fadeInUp"
@@ -42,15 +62,15 @@ const Services = ({ blok }) => {
                   >
                     <div className="image">
                       {!content ? (
-                        <img src={PlaceholderImg} alt="" />
+                        <img src={cov_image.cover_image.filename} alt="" />
                       ) : (
-                        content.service_meta_image && (
-                          <img
-                            src={content.service_meta_image.filename}
-                            alt=""
-                          />
-                        )
-                      )}
+                          content.service_meta_image && (
+                            <img
+                              src={content.service_meta_image.filename}
+                              alt=""
+                            />
+                          )
+                        )}
                     </div>
                     <div className="content">
                       <h4>
