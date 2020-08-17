@@ -69,10 +69,10 @@ const Header = () => {
             <button type="button">Services</button>
             <ul>
               <li>
-                <Link to="/services/commercial">Commercial</Link>
+                <Link to="/services/commercial-services">Commercial</Link>
               </li>
               <li>
-                <Link to="/services/residential">Residential</Link>
+                <Link to="/services/residential-services">Residential</Link>
               </li>
             </ul>
           </li>
