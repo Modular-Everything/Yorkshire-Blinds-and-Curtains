@@ -4357,6 +4357,7 @@ img {
 
 .contact-form .bootstrap-select > .dropdown-toggle,
 .contact-form .form-group input[type='text'],
+.contact-form .form-group input[type='text'],
 .contact-form .form-group input[type='email'],
 .contact-form .form-group textarea,
 .contact-form .form-group select {
@@ -4390,6 +4391,18 @@ img {
   margin-bottom: 10px;
 }
 
+.contact-form .form-group label {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.contact-form .form-group label span {
+  margin-bottom: 6px;
+  margin-top: 4px;
+  display: block;
+}
+
+
 .contact-form .bootstrap-select > .dropdown-toggle,
 .contact-form .form-group input[type='text'],
 .contact-form .form-group input[type='email'],
@@ -4402,7 +4415,7 @@ img {
   font-size: 16px;
   line-height: 30px;
   color: #222;
-  font-weight: 300;
+  font-weight: 400;
   background-color: #fcf9f2;
   padding: 11.5px 25px;
   border-radius: 0;
@@ -6830,7 +6843,7 @@ img {
 /* Contact Section */
 .contact-section.style-two {
   position: relative;
-  padding: 120px 0 90px;
+  padding: 90px 0;
 }
 
 .contact-section .contact-info-two {
