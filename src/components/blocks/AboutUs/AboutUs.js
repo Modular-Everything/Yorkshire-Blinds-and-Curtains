@@ -40,7 +40,6 @@ const AboutUs = ({ blok }) => {
                 <div className="link-btn">
                   {about_us_cta_link.id !== '' && (
                     <div className="link-btn">
-                      {/* // TODO: Use resolved links, not cached links */}
                       <Link
                         to={
                           about_us_cta_link.cached_url
@@ -93,7 +92,6 @@ const AboutUs = ({ blok }) => {
 
                 {about_us_cta_label && (
                   <div className="link-btn">
-                    {/* // TODO: Use resolved links, not cached links */}
                     <Link
                       to={
                         about_us_cta_link.cached_url

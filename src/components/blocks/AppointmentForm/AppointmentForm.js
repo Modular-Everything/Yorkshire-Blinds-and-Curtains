@@ -1,5 +1,4 @@
 import React from 'react';
-import Placeholder from '../../../../static/images/resource/image-76.jpg';
 
 const AppointmentForm = () => {
   return (
@@ -7,12 +6,6 @@ const AppointmentForm = () => {
       <div className="auto-container">
         <div className="wrapper-box mb-30">
           <div className="row">
-            {/* <div className="col-lg-5">
-              <div className="image">
-                <img src={Placeholder} alt="" />
-              </div>
-            </div> */}
-
             <div className="col-lg-12">
               <div className="contact-form-area">
                 <div className="sec-title small">
