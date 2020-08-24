@@ -2,6 +2,7 @@ import ComponentNotFound from './ComponentNotFound';
 import Page from '../foundations/Page';
 import Service from '../foundations/Service';
 import Project from '../foundations/Project';
+import Appointment from '../foundations/Appointment';
 
 import Banner from '../blocks/Banner';
 import AboutUs from '../blocks/AboutUs';
@@ -37,6 +38,7 @@ const ComponentList = {
   gallery: Gallery,
   service_info: CommercialServices,
   contact_us: ContactUs,
+  appointment: Appointment,
 };
 
 // ====

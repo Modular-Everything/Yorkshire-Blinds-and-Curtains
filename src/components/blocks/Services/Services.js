@@ -14,10 +14,6 @@ const Services = ({ blok }) => {
     WowReveal();
   }, []);
 
-  // storyblokEntry(content: {}) {
-  //   content
-  // }
-
   const DATA = useStaticQuery(graphql`
     query MetaTag {
       storyblokEntry(content: {}) {
@@ -64,13 +60,13 @@ const Services = ({ blok }) => {
                       {!content ? (
                         <img src={cov_image.cover_image.filename} alt="" />
                       ) : (
-                          content.service_meta_image && (
-                            <img
-                              src={content.service_meta_image.filename}
-                              alt=""
-                            />
-                          )
-                        )}
+                        content.service_meta_image && (
+                          <img
+                            src={content.service_meta_image.filename}
+                            alt=""
+                          />
+                        )
+                      )}
                     </div>
                     <div className="content">
                       <h4>
