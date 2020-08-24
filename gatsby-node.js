@@ -35,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
         const entries = result.data.allStoryblokEntry.edges;
         entries.forEach((entry) => {
           const pagePath =
-            entry.node.full_slug === 'home' ? '' : `${entry.node.full_slug}/`;
+            entry.node.full_slug === 'home' ? '' : `${entry.node.full_slug}`;
 
           createPage({
             path: `/${pagePath}`,
