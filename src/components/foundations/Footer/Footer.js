@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 
 // =====================
 // Footer
@@ -78,22 +78,14 @@ const Footer = () => {
                     <div className="widget-content">
                       <ul>
                         <li>
-                          <a href="/">Architecture</a>
+                          <Link to="/services/commercial-services">
+                            Commercial Services
+                          </Link>
                         </li>
                         <li>
-                          <a href="/">Home Lighting</a>
-                        </li>
-                        <li>
-                          <a href="/">Landscape Design</a>
-                        </li>
-                        <li>
-                          <a href="/">Floor Planning</a>
-                        </li>
-                        <li>
-                          <a href="/">Interior Design</a>
-                        </li>
-                        <li>
-                          <a href="/">Exterior Works</a>
+                          <Link to="/services/residential-services">
+                            Residential Services
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -109,8 +101,8 @@ const Footer = () => {
                       <li>
                         Phone: <br />
                         <a
-                          href={`tel:+${footerContentData.company_telephone_wakefield}`}
-                        >{`+${footerContentData.company_telephone_wakefield}`}</a>
+                          href={`tel:${footerContentData.company_telephone_wakefield}`}
+                        >{`${footerContentData.company_telephone_wakefield}`}</a>
                       </li>
                       <li>
                         Email: <br />
