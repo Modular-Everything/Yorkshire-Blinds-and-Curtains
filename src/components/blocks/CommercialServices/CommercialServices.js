@@ -1,8 +1,7 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import Swiper from 'swiper';
-import IconPdf from '../../../../static/images/icons/icon-2.png';
-import IconText from '../../../../static/images/icons/icon-3.png';
+import { Link } from 'gatsby';
 import AuthorThumb6 from '../../../../static/images/resource/author-thumb-6.jpg';
 import Image103 from '../../../../static/images/resource/image-103.jpg';
 
@@ -46,15 +45,21 @@ const CommercialServices = ({ blok }) => {
               <div className="row">
                 {service_blok &&
                   service_blok.map((value, index) => {
+                    console.log(value);
                     return (
-                      <div className="col-md-6 feature-block-two" key={index}>
-                        <div className="inner-box">
-                          <div className="icon">
-                            <span className={value.icon} />
+                      <Link
+                        to={`/${value.linkTo.story.full_slug}`}
+                        className="col-md-6"
+                      >
+                        <div className="feature-block-two" key={index}>
+                          <div className="inner-box">
+                            <div className="icon">
+                              <span className={value.icon} />
+                            </div>
+                            <h4>{value.title}</h4>
                           </div>
-                          <h4>{value.title}</h4>
                         </div>
-                      </div>
+                      </Link>
                     );
                   })}
               </div>
@@ -66,27 +71,12 @@ const CommercialServices = ({ blok }) => {
               pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia dese runt mollit anim id est laborum. Sed
               perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium totam aperiam.{' '}
+              accusantium doloremque laudantium totam aperiam.
             </div>
           </div>
+
           <aside className="col-lg-4">
             <div className="service-sidebar">
-              <div className="widget widget_brochure">
-                <div className="widget-content">
-                  <div className="single-brochure">
-                    <div className="icon">
-                      <img src={IconPdf} alt="" />
-                    </div>
-                    <a href="#">Download Brochure</a>
-                  </div>
-                  <div className="single-brochure">
-                    <div className="icon">
-                      <img src={IconText} alt="" />
-                    </div>
-                    <a href="#">About Intervio</a>
-                  </div>
-                </div>
-              </div>
               <div className="widget widget_client_review">
                 <h3 className="widget-title-two">Our Service Review</h3>
                 <div className="widget-content">
