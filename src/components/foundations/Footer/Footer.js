@@ -30,7 +30,9 @@ const Footer = () => {
               <div className="row">
                 <div className="col-md-8">
                   <div className="widget about-widget">
-                    <h3 className="widget-title">{footerContentData.site_name}</h3>
+                    <h3 className="widget-title">
+                      {footerContentData.site_name}
+                    </h3>
                     <div className="text">
                       {footerContentData.site_description}
                     </div>
@@ -106,11 +108,15 @@ const Footer = () => {
                       </li>
                       <li>
                         Phone: <br />
-                        <a href={`tel:+${footerContentData.company_telephone_wakefield}`}>{`+${footerContentData.company_telephone_wakefield}`}</a>
+                        <a
+                          href={`tel:+${footerContentData.company_telephone_wakefield}`}
+                        >{`+${footerContentData.company_telephone_wakefield}`}</a>
                       </li>
                       <li>
                         Email: <br />
-                        <a href={`mailto:${footerContentData.company_email}`}>{footerContentData.company_email}</a>
+                        <a href={`mailto:${footerContentData.company_email}`}>
+                          {footerContentData.company_email}
+                        </a>
                       </li>
                     </ul>
                   </div>

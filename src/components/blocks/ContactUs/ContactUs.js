@@ -7,22 +7,28 @@ import parse from 'html-react-parser';
 // =====================
 const ContactUs = ({ blok }) => {
   const { contact_us_info } = blok;
+  console.log(blok);
+
   return (
     <section className="contact-section style-two">
       <div className="auto-container">
         <div className="contact-info-three">
           <div className="row">
             {contact_us_info.map((value, index) => {
-              console.log("{marked(value.contact_us_content)}", marked(value.contact_us_content))
               return (
-              <div className="col-lg-4" key={index}>
-                <div className="content">
-                  <div className="icon"><span className={value.contact_us_icon}></span></div>
-                  <h4>{value.contact_us_title}</h4>
-                  <div className="text">{parse(marked(value.contact_us_content))}</div>
+                <div className="col-lg-4" key={index}>
+                  <div className="content">
+                    <div className="icon">
+                      <span className={value.contact_us_icon} />
+                    </div>
+                    <h4>{value.contact_us_title}</h4>
+                    <div className="text">
+                      {parse(marked(value.contact_us_content))}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            )})}
+              );
+            })}
           </div>
         </div>
       </div>

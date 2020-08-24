@@ -15,6 +15,7 @@ import ButtonWithLink from '../blocks/ButtonWithLink';
 import CTA from '../blocks/CTA';
 import Gallery from '../blocks/Gallery';
 import CommercialServices from '../blocks/CommercialServices';
+import ContactUs from '../blocks/ContactUs';
 
 // ====
 
@@ -34,7 +35,8 @@ const ComponentList = {
   button_with_link: ButtonWithLink,
   cta: CTA,
   gallery: Gallery,
-  service_info: CommercialServices
+  service_info: CommercialServices,
+  contact_us: ContactUs,
 };
 
 // ====
