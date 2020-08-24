@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import SbEditable from 'storyblok-react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
+import Img from 'react-cool-img';
+import ImageHandler from '../../../utils/ImageHandler';
 
 import { WowReveal } from '../../../utils/wow';
-import PlaceholderImg from '../../../../static/images/resource/image-7.jpg';
 
 // =====================
 // Services
@@ -61,9 +62,16 @@ const Services = ({ blok }) => {
                         <img src={cov_image.cover_image.filename} alt="" />
                       ) : (
                         content.service_meta_image && (
-                          <img
-                            src={content.service_meta_image.filename}
-                            alt=""
+                          <Img
+                            placeholder={ImageHandler(
+                              content.service_meta_image.filename,
+                              '15x15',
+                            )}
+                            src={ImageHandler(
+                              content.service_meta_image.filename,
+                              '500x400',
+                            )}
+                            alt={content.service_meta_image.alt || null}
                           />
                         )
                       )}
@@ -73,9 +81,9 @@ const Services = ({ blok }) => {
                         {!content ? `Service ${index + 1}` : content.seo_title}
                       </h4>
                       <div className="link-btn">
-                        <a href="/" className="read-more-btn">
+                        <Link to={node.full_slug} className="read-more-btn">
                           Read More
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
