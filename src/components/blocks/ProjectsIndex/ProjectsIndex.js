@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import SbEditable from 'storyblok-react';
 
-import { WowReveal } from '../../../utils/wow';
 import PlaceholderImg from '../../../../static/images/resource/image-5.jpg';
 
 // =====================
@@ -10,10 +9,6 @@ import PlaceholderImg from '../../../../static/images/resource/image-5.jpg';
 // =====================
 
 const ProjectsIndex = ({ blok }) => {
-  useEffect(() => {
-    WowReveal();
-  }, []);
-
   const { project } = blok;
 
   return (

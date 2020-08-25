@@ -1,20 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import SbEditable from 'storyblok-react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'react-cool-img';
 import ImageHandler from '../../../utils/ImageHandler';
-
-import { WowReveal } from '../../../utils/wow';
 
 // =====================
 // Services
 // =====================
 
 const Services = ({ blok }) => {
-  useEffect(() => {
-    WowReveal();
-  }, []);
-
   const DATA = useStaticQuery(graphql`
     query MetaTag {
       storyblokEntry(content: {}) {

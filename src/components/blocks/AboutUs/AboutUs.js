@@ -1,21 +1,16 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import SbEditable from 'storyblok-react';
 import Img from 'react-cool-img';
 
 import ImageHandler from '../../../utils/ImageHandler';
-import { WowReveal } from '../../../utils/wow';
 
 // =====================
 // About Us
 // =====================
 
 const AboutUs = ({ blok }) => {
-  useEffect(() => {
-    WowReveal();
-  }, []);
-
   const {
     about_us_title,
     about_us_subtitle,
