@@ -1,19 +1,9 @@
-/* Intervio Architecture HTML Template  */
-
-/*** 
-
-====================================================================
-            Fonts
-====================================================================
-
- ***/
-
 @import url('fontawesome-all.css');
 @import url('animate.css');
 @import url('custom-animate.css');
 @import url('flaticon.css');
-@import url('jquery-ui.css');
-@import url('jquery.fancybox.min.css');
+/* @import url('jquery-ui.css'); */
+/* @import url('jquery.fancybox.min.css'); */
 @import url('scrollbar.css');
 @import url('hover.css');
 @import url('jquery.touchspin.css');
@@ -21,13 +11,7 @@
 @import url('swiper.min.css');
 @import url('rtl.css');
 
-/*** 
 
-====================================================================
-    Reset
-====================================================================
-
- ***/
 
 * {
   margin: 0;
@@ -38,13 +22,7 @@
   line-height: inherit;
 }
 
-/*** 
 
-====================================================================
-    Global Settings
-====================================================================
-
- ***/
 
 .page-wrapper {
   position: relative;
@@ -326,13 +304,7 @@ img {
   padding-bottom: 50px !important;
 }
 
-/*** 
 
-====================================================================
-    Scroll To Top style
-====================================================================
-
-***/
 
 .scroll-to-top {
   position: fixed;
@@ -941,13 +913,7 @@ img {
   right: 100%;
 }
 
-/*** 
 
-====================================================================
-    Search Popup
-====================================================================
-
-***/
 
 .search-popup {
   position: fixed;
@@ -1088,13 +1054,7 @@ img {
   box-shadow: none;
 }
 
-/*** 
 
-====================================================================
-                Sticky Header
-====================================================================
-
-***/
 
 .sticky-header {
   position: fixed;
@@ -1475,13 +1435,7 @@ img {
   padding: 0 15px;
 }
 
-/*** 
 
-====================================================================
-            Mobile Menu
-====================================================================
-
-***/
 
 .nav-outer .mobile-nav-toggler {
   position: relative;
@@ -1976,13 +1930,7 @@ img {
   transform: rotate(45deg);
 }
 
-/*** 
 
-====================================================================
-        Banner Section
-====================================================================
-
-***/
 
 .banner-section {
   position: relative;
