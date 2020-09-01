@@ -6198,6 +6198,19 @@ img {
   color: #fff;
 }
 
+.video-embed {
+  position: relative;
+  padding-bottom: calc(900 / 1600 * 100%);
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* Client Logo Section Two */
 
 .clients-logo-section-two {

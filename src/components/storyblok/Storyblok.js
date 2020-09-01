@@ -17,6 +17,7 @@ import CTA from '../blocks/CTA';
 import Gallery from '../blocks/Gallery';
 import CommercialServices from '../blocks/CommercialServices';
 import ContactUs from '../blocks/ContactUs';
+import Video from '../blocks/Video';
 
 // ====
 
@@ -39,6 +40,7 @@ const ComponentList = {
   gallery: Gallery,
   service_info: CommercialServices,
   contact_us: ContactUs,
+  video: Video,
 };
 
 // ====
