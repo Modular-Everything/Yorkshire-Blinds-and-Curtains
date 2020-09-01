@@ -18,6 +18,7 @@ import Gallery from '../blocks/Gallery';
 import CommercialServices from '../blocks/CommercialServices';
 import ContactUs from '../blocks/ContactUs';
 import Video from '../blocks/Video';
+import Map from '../blocks/Map';
 
 // ====
 
@@ -41,6 +42,7 @@ const ComponentList = {
   service_info: CommercialServices,
   contact_us: ContactUs,
   video: Video,
+  map: Map,
 };
 
 // ====
