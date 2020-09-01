@@ -5105,6 +5105,7 @@ img {
 .cta-section {
   position: relative;
   text-align: center;
+  margin-bottom: 120px;
 }
 
 .cta-section .auto-container {
