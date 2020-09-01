@@ -17,12 +17,12 @@ const Services = ({ blok }) => {
     }
   `);
 
-  let cov_image;
-  if (DATA) {
-    cov_image = JSON.parse(DATA.storyblokEntry.content);
-  } else {
-    return null;
-  }
+  // let cov_image;
+  // if (DATA) {
+  //   cov_image = JSON.parse(DATA.storyblokEntry.content);
+  // } else {
+  //   return null;
+  // }
 
   const { services_title, services_copy, services_selection } = blok;
 
@@ -52,7 +52,7 @@ const Services = ({ blok }) => {
                     data-wow-duration="1500ms"
                   >
                     <div className="image">
-                      {!content ? (
+                      {/* {!content ? (
                         <img src={cov_image.cover_image.filename} alt="" />
                       ) : (
                         content.service_meta_image && (
@@ -68,7 +68,7 @@ const Services = ({ blok }) => {
                             alt={content.service_meta_image.alt || null}
                           />
                         )
-                      )}
+                      )} */}
                     </div>
                     <div className="content">
                       <h4>

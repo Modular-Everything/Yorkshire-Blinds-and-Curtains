@@ -14,6 +14,7 @@ module.exports = {
         accessToken: 'xPwQr6eLKQf9CFeneKnYUgtt',
         resolveLinks: true,
         resolveRelations: [
+          'testimonial.source',
           'services.services_selection',
           'projects_index.project',
         ],
