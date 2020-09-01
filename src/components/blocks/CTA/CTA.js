@@ -1,5 +1,8 @@
 import React from 'react';
 import ImageHandler from '../../../utils/ImageHandler';
+import Richtext from '../Richtext';
+
+// ====
 
 const CTA = ({ blok }) => {
   const { cta_bg, cta_copy } = blok;
@@ -15,12 +18,14 @@ const CTA = ({ blok }) => {
             })`,
           }}
         >
-          <h2>{cta_copy && cta_copy}</h2>
+          <Richtext content={cta_copy} />
           <div className="shape-one" />
         </div>
       </div>
     </section>
   );
 };
+
+// ====
 
 export default CTA;

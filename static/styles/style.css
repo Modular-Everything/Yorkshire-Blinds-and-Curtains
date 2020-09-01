@@ -5163,9 +5163,30 @@ img {
 .cta-section h2 {
   color: #fff;
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -3px;
   max-width: 650px;
+  z-index: 50;
+}
+
+.cta-section h3 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: -3px;
+  max-width: 650px;
+  z-index: 50;
+}
+
+.cta-section p {
+  color: #fff;
+  z-index: 50;
+  position: relative;
+  margin-top: 12px;
+}
+
+.cta-section a {
+  text-decoration: underline;
 }
 
 /* Services Section Style Two */
