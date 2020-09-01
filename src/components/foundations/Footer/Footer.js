@@ -39,28 +39,23 @@ const Footer = () => {
                     <div className="social-links">
                       <ul>
                         <li>
-                          <a href="/">
+                          <a href="https://facebook.com/YBCLTD">
                             <i className="fab fa-facebook-f" />
                           </a>
                         </li>
                         <li>
-                          <a href="/">
+                          <a href="https://twitter.com/yorkshireblinds">
                             <i className="fab fa-twitter" />
                           </a>
                         </li>
                         <li>
-                          <a href="/">
-                            <i className="fab fa-google-plus-g" />
+                          <a href="https://youtube.com/user/yorkshireblinds">
+                            <i className="fab fa-youtube" />
                           </a>
                         </li>
                         <li>
-                          <a href="/">
-                            <i className="fab fa-pinterest-p" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/">
-                            <i className="fab fa-instagram" />
+                          <a href="https://web.whatsapp.com/send?phone=01484%20318333">
+                            <i className="fab fa-whatsapp" />
                           </a>
                         </li>
                       </ul>
@@ -96,16 +91,23 @@ const Footer = () => {
                   <div className="widget-content">
                     <ul>
                       <li>
-                        address: <br /> {footerContentData.company_address}
+                        <strong>Address:</strong> <br />{' '}
+                        {footerContentData.company_address}
                       </li>
                       <li>
-                        Phone: <br />
+                        <strong>Huddersfield Phone:</strong> <br />
+                        <a
+                          href={`tel:${footerContentData.company_telephone_huddersfield}`}
+                        >{`${footerContentData.company_telephone_huddersfield}`}</a>
+                      </li>
+                      <li>
+                        <strong>Wakefield Phone:</strong> <br />
                         <a
                           href={`tel:${footerContentData.company_telephone_wakefield}`}
                         >{`${footerContentData.company_telephone_wakefield}`}</a>
                       </li>
                       <li>
-                        Email: <br />
+                        <strong>Email:</strong> <br />
                         <a href={`mailto:${footerContentData.company_email}`}>
                           {footerContentData.company_email}
                         </a>
