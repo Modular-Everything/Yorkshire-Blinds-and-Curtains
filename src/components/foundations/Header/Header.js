@@ -119,7 +119,9 @@ const Header = () => {
             <div className="navbar-right-info">
               <div className="phone-number">
                 <i className="fas fa-phone" />
-                <a href="tel:+1 (234)5018607">+1 (234) 501 8607</a>
+                <a href={`tel:${doc.company_telephone_huddersfield}`}>
+                  {doc.company_telephone_huddersfield}
+                </a>
               </div>
             </div>
           </div>
