@@ -1999,6 +1999,8 @@ img {
   padding: 24px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.75);
+  border-top: 2px solid #c5b173;
+  border-bottom: 2px solid #c5b173;
 }
 
 .banner-section .swiper-slide-active .content-box .inner {
@@ -2132,8 +2134,8 @@ img {
 
 .banner-section .text {
   position: relative;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 28px;
   color: #fff;
   font-weight: 400;
   opacity: 0;
@@ -2144,6 +2146,11 @@ img {
   -webkit-transform: translateX(-50px);
   -ms-transform: translateX(-50px);
   transform: translateX(-50px);
+  white-space: pre-line;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 24px;
+
 }
 
 .banner-section .swiper-slide-active .text {
@@ -2550,6 +2557,7 @@ img {
 }
 
 .footer-widget {
+  white-space: pre-line;
   position: relative;
   margin-bottom: 50px;
 }
