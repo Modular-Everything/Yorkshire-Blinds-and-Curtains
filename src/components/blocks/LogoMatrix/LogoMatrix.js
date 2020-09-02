@@ -11,13 +11,14 @@ import ImageHandler from '../../../utils/ImageHandler';
 const LogoMatrix = ({ blok }) => {
   const { matrix } = blok;
 
+  if (!matrix) return null;
+
   return (
     <SbEditable content={blok}>
       <section className="clients-logo-section">
         <div className="auto-container">
           <div className="logo_matrix">
             {matrix.map((node, index) => {
-              if (index > 4) return null;
               return (
                 <div className="slide-item">
                   <div className="image">
