@@ -21,9 +21,10 @@ const Banner = ({ blok }) => {
       resistanceRatio: single ? 0 : 0.6,
       speed: 1400,
       spaceBetween: 0,
-      parallax: false,
+      parallax: true,
       effect: 'slide',
-      autoplay: false,
+      autoHeight: !single,
+      autoplay: !single,
       navigation: {
         nextEl: '.banner-slider-button-next',
         prevEl: '.banner-slider-button-prev',

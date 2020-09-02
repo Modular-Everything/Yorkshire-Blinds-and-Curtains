@@ -2055,7 +2055,8 @@ img {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
   transform: translateY(0px);
-  margin-bottom: 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .banner-section .content-box h1:before {
