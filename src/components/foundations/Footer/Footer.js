@@ -91,23 +91,23 @@ const Footer = () => {
                   <div className="widget-content">
                     <ul>
                       <li>
-                        <strong>Address:</strong> <br />{' '}
+                        <strong>Visit Our Showroom:</strong> <br />{' '}
                         {footerContentData.company_address}
                       </li>
                       <li>
-                        <strong>Huddersfield Phone:</strong> <br />
+                        <strong>Discuss on the Phone:</strong> <br />
                         <a
                           href={`tel:${footerContentData.company_telephone_huddersfield}`}
                         >{`${footerContentData.company_telephone_huddersfield}`}</a>
                       </li>
                       <li>
-                        <strong>Wakefield Phone:</strong> <br />
+                        <strong>(Wakefield):</strong> <br />
                         <a
                           href={`tel:${footerContentData.company_telephone_wakefield}`}
                         >{`${footerContentData.company_telephone_wakefield}`}</a>
                       </li>
                       <li>
-                        <strong>Email:</strong> <br />
+                        <strong>Send an Email:</strong> <br />
                         <a href={`mailto:${footerContentData.company_email}`}>
                           {footerContentData.company_email}
                         </a>

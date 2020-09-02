@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import SbEditable from 'storyblok-react';
+import Img from 'react-cool-img';
 
 import PlaceholderImg from '../../../../static/images/resource/image-5.jpg';
+import ImageHandler from '../../../utils/ImageHandler';
 
 // =====================
 // Projects Index
@@ -11,6 +13,8 @@ import PlaceholderImg from '../../../../static/images/resource/image-5.jpg';
 const ProjectsIndex = ({ blok }) => {
   const { project } = blok;
 
+  console.log(project);
+
   return (
     <SbEditable content={blok}>
       <section className="projects-section">
@@ -18,25 +22,34 @@ const ProjectsIndex = ({ blok }) => {
           <div className="wrapper-box">
             <div className="row">
               {project.map((node) => {
-                const { content } = node;
                 return (
-                  <Link to="/" className="project-block-one col-lg-6">
+                  <Link
+                    to={`/${node.full_slug}`}
+                    className="project-block-one col-lg-6"
+                  >
                     <div
                       className="inner-box wow fadeInUp"
                       data-wow-duration="1500ms"
                     >
                       <div className="image">
-                        <img src={PlaceholderImg} alt="" />
+                        <Img
+                          src={
+                            node.content &&
+                            node.content.service_meta_image.filename !== ''
+                              ? ImageHandler(
+                                  node.content.service_meta_image.filename,
+                                  '600x700',
+                                )
+                              : PlaceholderImg
+                          }
+                          alt=""
+                        />
                       </div>
                       <div className="content">
                         <div className="top-content">
-                          <h5>timeless &amp; elegant</h5>
-                          <h3>Residential Works</h3>
+                          <h3>{node.name}</h3>
                         </div>
-                        <div className="text">
-                          Beyond more stoic this along goodness this <br />{' '}
-                          manatee flusterd impressive farcrud
-                        </div>
+                        <div className="text">View More</div>
                       </div>
                     </div>
                   </Link>
