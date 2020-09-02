@@ -18,10 +18,6 @@ const Layout = ({ children }) => {
       <main>{children}</main>
 
       <Footer />
-
-      <div className="scroll-to-top scroll-to-target" data-target="html">
-        <span className="flaticon-right-arrow" />
-      </div>
     </div>
   );
 };
