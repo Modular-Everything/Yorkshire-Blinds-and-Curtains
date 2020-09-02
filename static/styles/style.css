@@ -6637,7 +6637,7 @@ img {
 }
 
 .page-title:before {
-  content: '';
+  /* content: ''; */
   position: absolute;
   z-index: 10;
   background-color: black;
@@ -6649,9 +6649,10 @@ img {
 }
 
 .page-title .content-box {
-  padding-left: 22px;
   position: relative;
   z-index: 15;
+  background-color: rgba(0,0,0,0.75);
+  padding: 24px;
 }
 
 .page-title .content-box:before {
@@ -6671,12 +6672,11 @@ img {
   color: #fff;
   font-weight: 500;
   margin-bottom: 15px;
-  padding-top: 20px;
 }
 
 .page-title .content-box h1:before {
   position: absolute;
-  content: '';
+  /* content: ''; */
   left: 50%;
   top: 0;
   margin-left: -40px;
