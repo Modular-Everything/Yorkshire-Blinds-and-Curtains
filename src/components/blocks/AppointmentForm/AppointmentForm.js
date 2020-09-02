@@ -133,7 +133,13 @@ const AppointmentForm = () => {
                     </div>
                   </div>
                   <div className="col-md-4 form-group">
-                    <button type="submit">Submit</button>
+                    <button
+                      className="theme-btn btn-style-one"
+                      type="submit"
+                      name="submit-form"
+                    >
+                      <span>BOOK AN APPOINTMENT</span>
+                    </button>
                   </div>
                 </form>
               </div>
