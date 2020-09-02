@@ -6,7 +6,7 @@ const Button = ({ label, link }) => {
 
   return (
     <Link to={url} className="theme-btn btn-style-one">
-      {label}
+      <span>{label}</span>
     </Link>
   );
 };
