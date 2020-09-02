@@ -132,6 +132,9 @@ const AppointmentForm = () => {
                       </label>
                     </div>
                   </div>
+                  <div className="col-md-4 form-group">
+                    <button type="submit">Submit</button>
+                  </div>
                 </form>
               </div>
             </div>

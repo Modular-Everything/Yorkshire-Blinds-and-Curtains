@@ -3,6 +3,8 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import $ from 'jquery';
 
 import IconBar from '../../../../static/images/icons/icon-bar.png';
+import Logo from '../../../../static/images/logo.png';
+import LogoTwo from '../../../../static/images/logo-two.png';
 
 // =====================
 // Header
@@ -48,6 +50,35 @@ const Header = () => {
     $(window).on('scroll', function scrollHeader() {
       headerStyle();
     });
+
+    if ($('.main-header li.dropdown ul').length) {
+      $('.main-header .navigation li.dropdown').append(
+        '<div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>',
+      );
+    }
+
+    if ($('.mobile-menu').length) {
+      const mobileMenuContent = $('.main-header .nav-outer .main-menu').html();
+      $('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
+      $('.sticky-header .main-menu').append(mobileMenuContent);
+
+      // Dropdown Button
+      $('.mobile-menu li.dropdown .dropdown-btn').on('click', function () {
+        $(this).toggleClass('open');
+        $(this).prev('ul').slideToggle(500);
+      });
+      // Menu Toggle Btn
+      $('.mobile-nav-toggler').on('click', function () {
+        $('body').addClass('mobile-menu-visible');
+      });
+
+      // Menu Toggle Btn
+      $(
+        '.mobile-menu .menu-backdrop,.mobile-menu .close-btn,.scroll-nav li a',
+      ).on('click', function () {
+        $('body').removeClass('mobile-menu-visible');
+      });
+    }
   }, []);
 
   // ==
@@ -77,9 +108,6 @@ const Header = () => {
             </ul>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
             <Link to="/blog">Blog</Link>
           </li>
           <li className="dropdown">
@@ -105,7 +133,7 @@ const Header = () => {
             <div className="logo-box">
               <div className="logo">
                 <a href="index.html" className="logo-box logo">
-                  <h2>{doc.site_name}</h2>
+                  <img src={LogoTwo} alt={doc.site_name} />
                 </a>
               </div>
             </div>
@@ -148,40 +176,10 @@ const Header = () => {
         <nav className="menu-box">
           <div className="nav-logo">
             <a href="index.html">
-              <h2>{doc.site_name}</h2>
+              <img src={LogoTwo} alt={doc.site_name} />
             </a>
           </div>
-          <div className="menu-outer">
-            <div className="social-links">
-              <ul className="clearfix">
-                <li>
-                  <a href="/">
-                    <span className="fab fa-twitter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <span className="fab fa-facebook-square" />
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <span className="fab fa-pinterest-p" />
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <span className="fab fa-instagram" />
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <span className="fab fa-youtube" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <div className="menu-outer" />
         </nav>
       </div>
 

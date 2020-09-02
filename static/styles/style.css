@@ -462,13 +462,13 @@ img {
 /* Header Style */
 
 .main-header {
-  position: absolute;
+  position: relative;
   display: block;
   width: 100%;
   z-index: 9999;
   top: 0;
   left: 0;
-  background: none;
+  background: #333;
   clear: both;
 }
 
@@ -1589,8 +1589,11 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.mobile-menu .navigation li > button,
 .mobile-menu .navigation li > a {
   position: relative;
+  background: transparent;
+  border: 0;
   display: block;
   line-height: 24px;
   padding: 10px 25px;
@@ -1960,7 +1963,7 @@ img {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #000000;
+  /* background-color: #000000; */
   opacity: 0.6;
   content: '';
 }
@@ -1993,8 +1996,9 @@ img {
   transform: translateX(100px);
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 24px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .banner-section .swiper-slide-active .content-box .inner {
@@ -2005,6 +2009,9 @@ img {
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
+  margin: 0;
+  width: 100vw !important;
+  max-width: unset;
 }
 
 .banner-section .content-box .inner:before {
@@ -2020,8 +2027,8 @@ img {
 
 .banner-section .content-box h1 {
   position: relative;
-  font-size: 66px;
-  line-height: 70px;
+  font-size: 48px;
+  line-height: 56px;
   color: #fff;
   font-weight: 500;
   text-transform: capitalize;
@@ -2046,11 +2053,12 @@ img {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
   transform: translateY(0px);
+  margin-bottom: 0;
 }
 
 .banner-section .content-box h1:before {
   position: absolute;
-  content: '';
+  /* content: ''; */
   left: 50%;
   top: -20px;
   height: 2px;
@@ -2127,7 +2135,7 @@ img {
   font-size: 24px;
   line-height: 36px;
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 500ms ease;
@@ -5173,7 +5181,6 @@ img {
   color: #fff;
   font-size: 26px;
   font-weight: 400;
-  letter-spacing: -3px;
   max-width: 650px;
   z-index: 50;
 }
@@ -6831,7 +6838,11 @@ img {
 
 .contact-section .contact-info-two {
   position: relative;
-  margin-top: 110px;
+  /* margin-top: 110px; */
+}
+
+.contact-section .contact-info-two table td {
+  padding: 8px;
 }
 
 .contact-section .contact-info-two .content {

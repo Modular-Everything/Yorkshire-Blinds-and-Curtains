@@ -93,6 +93,7 @@ const Footer = () => {
                       <li>
                         <strong>Address:</strong> <br />{' '}
                         {footerContentData.company_address}
+                        {/* // TODO: New line to BR */}
                       </li>
                       <li>
                         <strong>Huddersfield Phone:</strong> <br />

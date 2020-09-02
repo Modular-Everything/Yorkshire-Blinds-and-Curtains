@@ -9,7 +9,7 @@ const CTA = ({ blok }) => {
 
   return (
     <section className="cta-section">
-      <div className="auto-container">
+      <div>
         <div
           className="outer-box d-flex justify-content-center"
           style={{
