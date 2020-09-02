@@ -60,7 +60,6 @@ const Header = () => {
     if ($('.mobile-menu').length) {
       const mobileMenuContent = $('.main-header .nav-outer .main-menu').html();
       $('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
-      $('.sticky-header .main-menu').append(mobileMenuContent);
 
       // Dropdown Button
       $('.mobile-menu li.dropdown .dropdown-btn').on('click', function () {
@@ -160,7 +159,7 @@ const Header = () => {
         <div className="auto-container clearfix">
           <div className="logo float-left">
             <a href="index.html" title="">
-              <h2>{doc.site_name}</h2>
+              <img src={Logo} alt={doc.site_name} />
             </a>
           </div>
           <div className="float-right">{navContent}</div>
