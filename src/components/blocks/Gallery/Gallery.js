@@ -31,7 +31,7 @@ const Gallery = ({ blok }) => {
                           src={ImageHandler(node.filename, '500x500')}
                           alt={node.alt || null}
                         />
-                        <div className="overlay">
+                        {/* <div className="overlay">
                           <a
                             data-fancybox="example gallery"
                             href={node.filename}
@@ -41,7 +41,7 @@ const Gallery = ({ blok }) => {
                           </a>
                           <span className="border-one" />
                           <span className="border-two" />
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
