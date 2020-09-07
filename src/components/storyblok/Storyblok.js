@@ -3,6 +3,7 @@ import Page from '../foundations/Page';
 import Appointment from '../foundations/Appointment';
 import Service from '../foundations/Service';
 import Project from '../foundations/Project';
+import BlogRoot from '../foundations/BlogRoot';
 
 import Banner from '../blocks/Banner';
 import AboutUs from '../blocks/AboutUs';
@@ -45,6 +46,7 @@ const ComponentList = {
   video: Video,
   map: Map,
   opening_times: OpeningTimes,
+  blog_root: BlogRoot,
 };
 
 // ====
