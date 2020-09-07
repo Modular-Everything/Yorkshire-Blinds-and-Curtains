@@ -23,11 +23,19 @@ const Richtext = ({ content }) => {
       'strong',
       'a',
       'p',
+      'u',
+      'strike',
+      'ul',
+      'ol',
+      'li',
+      'hr',
+      'img',
     ],
     allowedAttributes: {
       a: ['href'],
+      img: ['src'],
     },
-    allowedIframeHostnames: ['www.youtube.com'],
+    allowedIframeHostnames: ['www.youtube.com', 'player.vimeo.com'],
   });
 
   return <div dangerouslySetInnerHTML={{ __html: clean }} />;

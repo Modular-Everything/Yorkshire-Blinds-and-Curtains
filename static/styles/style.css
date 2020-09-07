@@ -7593,6 +7593,16 @@ img {
   margin-bottom: 20px;
 }
 
+.blog-single-post .text ul li {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+.blog-single-post .text ol li {
+  list-style: number;
+  margin-left: 32px;
+}
+
 .blog-single-post .post-meta {
   position: relative;
 }

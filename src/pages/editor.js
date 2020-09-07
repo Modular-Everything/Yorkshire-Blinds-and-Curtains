@@ -70,10 +70,10 @@ const StoryblokEntry = (props) => {
     return <div />;
   }
 
-  const { content, full_slug, parent_id } = story;
+  const { content, first_published_at, name, full_slug, parent_id } = story;
   const { seo_title, seo_description, seo_image } = content;
 
-  const context = { full_slug, parent_id };
+  const context = { name, full_slug, parent_id, first_published_at };
   const seo = { seo_title, seo_description, seo_image };
 
   return (

@@ -4,6 +4,7 @@ import Appointment from '../foundations/Appointment';
 import Service from '../foundations/Service';
 import Project from '../foundations/Project';
 import BlogRoot from '../foundations/BlogRoot';
+import BlogPost from '../foundations/BlogPost';
 
 import Banner from '../blocks/Banner';
 import AboutUs from '../blocks/AboutUs';
@@ -47,6 +48,7 @@ const ComponentList = {
   map: Map,
   opening_times: OpeningTimes,
   blog_root: BlogRoot,
+  blog_post: BlogPost,
 };
 
 // ====
