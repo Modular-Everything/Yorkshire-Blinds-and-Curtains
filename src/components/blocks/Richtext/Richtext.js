@@ -30,6 +30,7 @@ const Richtext = ({ content }) => {
       'li',
       'hr',
       'img',
+      'br',
     ],
     allowedAttributes: {
       a: ['href'],
