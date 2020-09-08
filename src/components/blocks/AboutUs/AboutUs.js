@@ -59,7 +59,7 @@ const AboutUs = ({ blok }) => {
                         about_us_image.filename,
                         '15x15',
                       )}
-                      src={ImageHandler(about_us_image.filename, '500x500')}
+                      src={ImageHandler(about_us_image.filename, '1080x1080')}
                       alt={about_us_image.alt || null}
                     />
                   )}

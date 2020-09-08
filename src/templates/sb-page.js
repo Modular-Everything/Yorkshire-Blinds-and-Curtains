@@ -30,12 +30,13 @@ class StoryblokEntry extends React.Component {
     const {
       name,
       first_published_at,
+      slug,
       full_slug,
       parent_id,
     } = this.props.pageContext.story;
     const { seo_title, seo_description, seo_image } = content;
 
-    const context = { name, first_published_at, full_slug, parent_id };
+    const context = { name, first_published_at, slug, full_slug, parent_id };
     const seo = { seo_title, seo_description, seo_image };
 
     return (

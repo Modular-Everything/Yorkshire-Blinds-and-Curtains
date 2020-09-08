@@ -579,6 +579,12 @@ img {
   border-radius: 50%;
 }
 
+.nav-outer .mobile-nav-toggler img {
+  width: auto;
+  max-width: 100px;
+}
+
+
 /* Sticky Header */
 
 .sticky-header {
@@ -1483,6 +1489,10 @@ img {
   padding: 30px 25px;
   text-align: left;
   margin-bottom: 100px;
+}
+
+.mobile-menu .nav-logo img {
+  max-width: 200px;
 }
 
 .mobile-menu-visible {
@@ -3066,7 +3076,7 @@ img {
 /* Services Section */
 .services-section {
   position: relative;
-  padding: 145px 0 210px;
+  padding: 145px 0 90px;
 }
 
 .services-section .big-title {

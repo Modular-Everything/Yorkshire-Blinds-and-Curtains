@@ -2,6 +2,7 @@ import ComponentNotFound from './ComponentNotFound';
 import Page from '../foundations/Page';
 import Appointment from '../foundations/Appointment';
 import Service from '../foundations/Service';
+import ServiceRoot from '../foundations/ServiceRoot';
 import Project from '../foundations/Project';
 import BlogRoot from '../foundations/BlogRoot';
 import BlogPost from '../foundations/BlogPost';
@@ -30,6 +31,7 @@ const ComponentList = {
   appointment: Appointment,
   service_primary: Page,
   service: Service,
+  service_root: ServiceRoot,
   project: Project,
   banner: Banner,
   about_us: AboutUs,
