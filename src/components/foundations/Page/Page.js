@@ -9,7 +9,7 @@ import SEO from '../../blocks/SEO';
 // ====
 
 const Page = ({ blok, context, seo }) => {
-  const { full_slug } = context;
+  const { name, full_slug } = context;
   const { seo_title, seo_description, seo_image } = seo;
 
   if (!blok) return null;
@@ -19,7 +19,7 @@ const Page = ({ blok, context, seo }) => {
       <SEO
         page={{
           path: full_slug,
-          title: seo_title,
+          title: seo_title || name,
           description: seo_description,
           image: seo_image || false,
         }}

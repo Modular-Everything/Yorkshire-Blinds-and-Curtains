@@ -172,7 +172,7 @@ figure {
 
 img {
   display: inline-block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -2995,7 +2995,8 @@ img {
 }
 
 .clients-logo-section .image img {
-  width: auto;
+  max-width: 200px;
+  width: 100%;
 }
 
 /* Sec Title */
