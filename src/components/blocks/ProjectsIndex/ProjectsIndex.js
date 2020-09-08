@@ -13,8 +13,6 @@ import ImageHandler from '../../../utils/ImageHandler';
 const ProjectsIndex = ({ blok }) => {
   const { project } = blok;
 
-  console.log(project);
-
   return (
     <SbEditable content={blok}>
       <section className="projects-section">
