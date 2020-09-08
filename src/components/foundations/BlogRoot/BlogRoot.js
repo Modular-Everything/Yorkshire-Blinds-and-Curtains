@@ -78,7 +78,7 @@ const BlogRoot = ({ blok, context, seo }) => {
                       data-wow-duration="1500ms"
                     >
                       <h3>
-                        <Link to={node.full_slug}>{node.name}</Link>
+                        <Link to={`/${node.full_slug}`}>{node.name}</Link>
                       </h3>
                       <div className="wrapper-box">
                         <ul className="post-meta">
@@ -91,7 +91,7 @@ const BlogRoot = ({ blok, context, seo }) => {
                       </div>
                       <div className="link-btn">
                         <Link
-                          to={node.full_slug}
+                          to={`/${node.full_slug}`}
                           className="theme-btn btn-style-one"
                         >
                           <span>Read More</span>
