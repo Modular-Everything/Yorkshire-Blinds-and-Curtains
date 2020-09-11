@@ -131,9 +131,9 @@ const Header = () => {
           <div className="inner-container">
             <div className="logo-box">
               <div className="logo">
-                <a href="index.html" className="logo-box logo">
+                <Link to="/" className="logo-box logo">
                   <img src={LogoTwo} alt={doc.site_name} />
-                </a>
+                </Link>
               </div>
             </div>
 
