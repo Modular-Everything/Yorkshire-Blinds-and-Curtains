@@ -15,7 +15,12 @@ const AppointmentForm = () => {
                   </h2>
                 </div>
 
-                <form data-netlify="true" className="contact-form">
+                <form
+                  data-netlify="true"
+                  className="contact-form"
+                  name="contact"
+                  method="POST"
+                >
                   <input type="hidden" name="form-name" value="contact" />
                   <div className="row">
                     <div className="col-md-12 form-group">
@@ -83,7 +88,6 @@ const AppointmentForm = () => {
                           <option>£600 - £1000</option>
                           <option>£1000+</option>
                           <option>I am looking for the lowest price</option>
-                          <option>I</option>
                         </select>
                       </label>
                     </div>
