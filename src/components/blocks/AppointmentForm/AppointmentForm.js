@@ -15,7 +15,8 @@ const AppointmentForm = () => {
                   </h2>
                 </div>
 
-                <form netlify className="contact-form">
+                <form data-netlify="true" className="contact-form">
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="row">
                     <div className="col-md-12 form-group">
                       <label htmlFor="typeOfBlinds">
