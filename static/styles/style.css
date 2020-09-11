@@ -6817,8 +6817,15 @@ img {
 .error-page {
   position: relative;
   text-align: center;
-  padding-top: 70px;
-  padding-bottom: 350px;
+  height: 100vh;
+}
+
+.error-page .auto-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .error-page .logo {
@@ -6828,7 +6835,7 @@ img {
 .error-page h1 {
   position: relative;
   font-size: 150px;
-  font-weight: 500;
+  font-weight: 00;
   color: #fff;
   line-height: 150px;
 }
@@ -6837,7 +6844,7 @@ img {
   position: relative;
   color: #fff;
   font-size: 70px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 30px;
 }
 
@@ -6845,7 +6852,7 @@ img {
   position: relative;
   color: #fff;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 40px;
 }
 
