@@ -1,7 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import Layout from '../Layout';
+import Components from '../../storyblok/Storyblok';
 
 import SEO from '../../blocks/SEO';
-import BGImg from '../../../../static/images/background/bg-24.jpg';
 
 // ====
 
@@ -12,28 +15,24 @@ const Page = ({ blok, context, seo }) => {
   if (!blok) return null;
 
   return (
-    <>
+    <Layout>
       <SEO
         page={{
           path: full_slug,
-          title: 'Coming Soon',
+          title: seo_title || name,
           description: seo_description,
           image: seo_image || false,
         }}
       />
-      <div className="error-page" style={{ backgroundImage: `url(${BGImg})` }}>
-        <div className="auto-container">
-          <div className="content-box">
-            <h1>Coming Soon</h1>
-            <h2>Please check back shortly.</h2>
-            <div className="text">
-              Alternatively, you can contact us on{' '}
-              <a href="tel:01484318333">01484 318333</a>.
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+
+      {blok.body &&
+        blok.body.map((node) =>
+          React.createElement(Components(node.component), {
+            key: node._uid,
+            blok: node,
+          }),
+        )}
+    </Layout>
   );
 };
 
