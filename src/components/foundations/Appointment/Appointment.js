@@ -18,10 +18,9 @@ const Page = ({ blok, context, seo }) => {
   return (
     <Layout>
       <SEO
-        title="Book an Appointment"
         page={{
           path: full_slug,
-          title: seo_title,
+          title: 'Book an Appointment',
           description: seo_description,
           image: seo_image || false,
         }}
