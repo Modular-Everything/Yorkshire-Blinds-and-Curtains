@@ -9,7 +9,7 @@ import ImageHandler from '../../../utils/ImageHandler';
 const Map = ({ blok }) => {
   return (
     <SbEditable content={blok}>
-      <a href={blok.map_link}>
+      <a href={blok.map_link.url}>
         <Img src={ImageHandler(blok.map_image.filename)} alt="Google Map" />
       </a>
     </SbEditable>
