@@ -5,7 +5,7 @@ const Button = ({ label, link }) => {
   const url = link && link.story ? link.story.full_slug : link.url;
 
   return (
-    <Link to={url} className="theme-btn btn-style-one">
+    <Link to={`/${url}`} className="theme-btn btn-style-one">
       <span>{label}</span>
     </Link>
   );
