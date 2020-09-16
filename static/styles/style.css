@@ -5216,6 +5216,12 @@ img {
 
 .cta-section a {
   text-decoration: underline;
+  color: #fff;
+}
+
+.cta-section a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Services Section Style Two */

@@ -7,6 +7,8 @@ import Richtext from '../Richtext';
 const CTA = ({ blok }) => {
   const { cta_bg, cta_copy } = blok;
 
+  console.log(cta_copy);
+
   return (
     <section className="cta-section">
       <div>
