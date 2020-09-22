@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
+import { Link } from 'gatsby';
 import SbEditable from 'storyblok-react';
 
 // =====================
@@ -32,6 +33,8 @@ const Banner = ({ blok }) => {
     });
   }, []);
 
+  console.log(blok);
+
   return (
     <SbEditable content={blok}>
       <section className="banner-section">
@@ -52,14 +55,14 @@ const Banner = ({ blok }) => {
                         <div className="inner">
                           {title && <h1>{title}</h1>}
                           {copy && <div className="text">{copy}</div>}
-                          {link.url && (
+                          {link.cached_url && (
                             <div className="link-box">
-                              <a
-                                href={link}
+                              <Link
+                                to={link.cached_url}
                                 className="theme-btn btn-style-one light"
                               >
                                 <span>{cta || `FIND OUT MORE`}</span>
-                              </a>
+                              </Link>
                             </div>
                           )}
                         </div>
