@@ -21,6 +21,8 @@ const Preloader = () => {
         $('.loader-wrap').delay(200).fadeOut(500);
       });
     }
+
+    setTimeout(() => $('.loader-wrap').remove(), 1500);
   }, []);
 
   return (
