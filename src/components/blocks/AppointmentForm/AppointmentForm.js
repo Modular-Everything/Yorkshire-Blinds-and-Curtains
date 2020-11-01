@@ -81,13 +81,13 @@ const AppointmentForm = () => {
                       <label htmlFor="budget">
                         <span>Do you have a budget?</span>
                         <select name="budget">
+                          <option>I am not sure how much to expect</option>
                           <option>Up to £100.00</option>
                           <option>£100 - £200</option>
                           <option>£200 - £400</option>
                           <option>£400 - £600</option>
                           <option>£600 - £1000</option>
                           <option>£1000+</option>
-                          <option>I am looking for the lowest price</option>
                         </select>
                       </label>
                     </div>
