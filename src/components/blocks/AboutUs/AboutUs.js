@@ -21,6 +21,8 @@ const AboutUs = ({ blok }) => {
     about_us_alt_layout,
   } = blok;
 
+  console.log(about_us_cta_link.linktype);
+
   if (about_us_alt_layout) {
     return (
       <section className="about-us-section-four">
@@ -35,16 +37,25 @@ const AboutUs = ({ blok }) => {
                 <div className="link-btn">
                   {about_us_cta_link.id !== '' && (
                     <div className="link-btn">
-                      <Link
-                        to={
-                          about_us_cta_link.cached_url
-                            ? about_us_cta_link.cached_url
-                            : '/'
-                        }
-                        className="theme-btn btn-style-two"
-                      >
-                        <span>{about_us_cta_label}</span>
-                      </Link>
+                      {about_us_cta_link.linktype === 'url' ? (
+                        <a
+                          href={about_us_cta_link.cached_url}
+                          className="theme-btn btn-style-two blolb"
+                        >
+                          <span>{about_us_cta_label}</span>
+                        </a>
+                      ) : (
+                        <Link
+                          to={
+                            about_us_cta_link.cached_url
+                              ? about_us_cta_link.cached_url
+                              : '/'
+                          }
+                          className="theme-btn btn-style-two"
+                        >
+                          <span>{about_us_cta_label}</span>
+                        </Link>
+                      )}
                     </div>
                   )}
                 </div>
@@ -85,18 +96,27 @@ const AboutUs = ({ blok }) => {
 
                 <div className="text">{about_us_copy && about_us_copy}</div>
 
-                {about_us_cta_label && (
+                {about_us_cta_label.id !== '' && (
                   <div className="link-btn">
-                    <Link
-                      to={
-                        about_us_cta_link.cached_url
-                          ? about_us_cta_link.cached_url
-                          : '/'
-                      }
-                      className="theme-btn btn-style-two"
-                    >
-                      <span>{about_us_cta_label}</span>
-                    </Link>
+                    {about_us_cta_link.linktype === 'url' ? (
+                      <a
+                        href={about_us_cta_link.cached_url}
+                        className="theme-btn btn-style-two blolb"
+                      >
+                        <span>{about_us_cta_label}</span>
+                      </a>
+                    ) : (
+                      <Link
+                        to={
+                          about_us_cta_link.cached_url
+                            ? about_us_cta_link.cached_url
+                            : '/'
+                        }
+                        className="theme-btn btn-style-two"
+                      >
+                        <span>{about_us_cta_label}</span>
+                      </Link>
+                    )}
                   </div>
                 )}
               </div>
