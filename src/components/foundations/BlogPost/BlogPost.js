@@ -20,8 +20,6 @@ const BlogPost = ({ blok, context, seo }) => {
     breadcrumb_image: blok.breadcrumb_image,
   };
 
-  console.log(blok);
-
   return (
     <Layout>
       <SEO

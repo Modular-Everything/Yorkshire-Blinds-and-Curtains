@@ -33,8 +33,6 @@ const Banner = ({ blok }) => {
     });
   }, []);
 
-  console.log(blok);
-
   return (
     <SbEditable content={blok}>
       <section className="banner-section">

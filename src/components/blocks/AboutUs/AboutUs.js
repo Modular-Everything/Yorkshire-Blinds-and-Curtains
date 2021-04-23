@@ -21,8 +21,6 @@ const AboutUs = ({ blok }) => {
     about_us_alt_layout,
   } = blok;
 
-  console.log(about_us_cta_link.linktype);
-
   if (about_us_alt_layout) {
     return (
       <section className="about-us-section-four">

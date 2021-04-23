@@ -67,7 +67,6 @@ const ServiceRoot = ({ blok, context, seo }) => {
           <div className="row">
             {PAGE_DATA.map((node) => {
               const ITEM_DATA = JSON.parse(node.content);
-              console.log(ITEM_DATA);
 
               return (
                 <Services

@@ -17,8 +17,6 @@ const ContactUs = ({ blok }) => {
         <div className="contact-info-three">
           <div className="row" style={{ justifyContent: 'center' }}>
             {contact_us_info.map((value, index) => {
-              console.log(value);
-
               return (
                 <SbEditable content={value}>
                   <div className="col-lg-4" key={index}>

@@ -26,12 +26,7 @@ const AppointmentForm = () => {
                     <div className="col-md-12 form-group">
                       <label htmlFor="typeOfBlinds">
                         <span>Your contact details:</span>
-                        <input
-                          type="text"
-                          name="name"
-                          placeholder="Name"
-                          required
-                        />
+                        <input type="text" name="name" placeholder="Name" />
                       </label>
                     </div>
                     <div className="col-md-12 form-group">
@@ -39,7 +34,6 @@ const AppointmentForm = () => {
                         type="email"
                         name="email"
                         placeholder="Email Address"
-                        required
                       />
                     </div>
                     <div className="col-md-12 form-group">
@@ -47,11 +41,10 @@ const AppointmentForm = () => {
                         type="text"
                         name="number"
                         placeholder="Contact Number"
-                        required
                       />
                     </div>
                     <div className="col-md-12 form-group">
-                      <textarea name="address" placeholder="Address" required />
+                      <textarea name="address" placeholder="Address" />
                     </div>
                     <div className="col-md-4 form-group">
                       <label htmlFor="typeOfBlinds">
